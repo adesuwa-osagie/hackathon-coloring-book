@@ -10,6 +10,22 @@
 <body>
     <canvas id="canvas"></canvas>
 
+<div>
+
+    <button onClick="undo_last()" type="button" class="button">Undo</button>
+    <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
+    <button onClick="clear_canvas()" type="button" class="button">Clear</button>
+
+    <!-- JSColor Picker -->
+    Color: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
+
+    <input type="range" min="1" max="100" class="pen-range" id="penRange" >
+    <p>Value: <span id="pen-width"></span></p>
+
+    <button onClick="erase_color()" type="button" class="button" id="erase">Erase</button>
+
+</div>
+    <script src="./scripts-folder/jscolor.js"></script>
     <script src="./scripts-folder/color-book.js"></script>
 </body> 
 </html>
