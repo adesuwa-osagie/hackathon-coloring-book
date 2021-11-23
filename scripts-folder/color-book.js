@@ -22,6 +22,8 @@
     let output = document.getElementById("pen-width");
     output.textContent = slider.value;
 
+    let imageValue;
+    
     //Array
 
     let store_array = [];
@@ -29,6 +31,8 @@
 
     let removed_array = [];
     let indexRemoved = -1;
+
+    
 
     // EventListeners
 
@@ -88,7 +92,7 @@
         output.textContent = this.value;
     }
 
-    // UNDO Function 
+    // UNDO 
     function undo_last() {
         if (index === 0) {
             return;
@@ -108,6 +112,7 @@
         }
     }
 
+    // REDO 
     function redo_last() {
         if (index === -1)  {
             context.putImageData(removedLast[0], 0, 0);
@@ -129,7 +134,54 @@
         }
     }
 
+    // ERASE
+    function erase_color() {
+        //To prevent the color of the main background
+        draw_color = start_background_color;
+    
+        // context.globalCompositeOperation = 'destination-out'
+    }
 
+    // RESET CANVAS
+    function reset_canvas() {
+        //declaring the fill's color 
+        context.fillStyle = start_background_color;
+
+        // drawing_image(imageValue);
+
+        removed_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
+    
+        context.clearRect(0, 0, canvas.width, canvas.height); //clears the background
+        context.fillRect(0, 0, canvas.width, canvas.height); //refills with white again
+
+        //reset array and index
+        restore_array = [];
+        index = -1;
+    
+        removed_array = [];
+        indexRemoved = -1;
+    }
+
+    // LOADING IMAGE
+    function load_pic(element) {
+        imageValue = element.src;
+        console.log(imageValue)
+        drawing_image(imageValue);
+    }
+
+    function drawing_image(image) {
+        let newImage = new Image();
+
+        newImage.onload = function() {
+            context.drawImage(newImage, 0, 0, canvas.width, canvas.height);
+            restore_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
+            
+            index += 1; // wi
+        }
+        if (image !== undefined) {
+        newImage.src = image;
+        }
+    }
 
 
 

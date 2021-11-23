@@ -14,7 +14,7 @@
 
     <button onClick="undo_last()" type="button" class="button">Undo</button>
     <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
-    <button onClick="clear_canvas()" type="button" class="button">Clear</button>
+    <button onClick="reset_canvas()" type="button" class="button">Reset</button>
 
     <!-- JSColor Picker -->
     Color: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
@@ -23,6 +23,9 @@
     <p>Value: <span id="pen-width"></span></p>
 
     <button onClick="erase_color()" type="button" class="button" id="erase">Erase</button>
+
+
+    
 
 </div>
     <script src="./scripts-folder/jscolor.js"></script>
