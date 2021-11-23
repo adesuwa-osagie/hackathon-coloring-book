@@ -4,9 +4,30 @@
     box-sizing: border-box;
 }
 
+body {
+    visibility: hidden;
+    background: black;
+}
+
+
+.despair-message {
+    visibility: visible;
+    color: white;
+}
+
 /* TABLET */
 @media only screen and (min-width: 768px) {
 
+    .despair-message {
+        visibility: hidden;
+        display: none;
+    }
+
+    body {
+        visibility: visible;
+        background: white;
+        position: relative;
+    }
 
 
     .drawing {
@@ -15,9 +36,19 @@
 
     #canvas {
         border: 2px solid black;
-        margin: 1em;
-        margin-top: 1.5em;;
+        margin: 0.5em;
+        margin-top: 1.5em;
+        background-image: url("/images/hope-peak-academy.png");
+        background-size: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: .22;
+        position: relative;
+        
     }
+
+
+
 
     .controls {
         display: flex;
@@ -35,20 +66,37 @@
         margin: 10px;
     }
 
-
-
     .gallery {
         display: grid;
+        background: gray;
         grid-template-columns: repeat(4, auto);
         gap: 0.5em;
-        border: 2px solid green;
+        border: 3px solid green;
         margin-top: 10px;
+        position: relative;
+        padding: 1em;
+    }
+
+    .gallery:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/images/hope-peak-academy.png");
+        background-size: 250px;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: .22;
+        
     }
 
     .image {
-        border: 1px solid pink;
+        border: 3px solid pink;
         margin: 5px;
         padding: 8px;
+        position: relative
     }
 
     /* Similar to highlight for desktop */

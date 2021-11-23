@@ -12,12 +12,16 @@
 </head>
 <body>
     <div class="drawing">
+        <p class="despair-message">This is app is not compatible with this device. Enjoy the despair.</p>
+
         <canvas id="canvas"></canvas>
 
         <div class="controls">
 
             <!-- JSColor Picker -->
-            Color: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
+            Color/Opacity: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
+
+            Dropper Here: <input onInput="draw_color = this.value" type="color" class="color-picker"> 
             
             <input type="range" min="1" max="100" class="pen-range" id="penRange" >
             <p>Pen Size: <span id="pen-width"></span></p>
@@ -36,22 +40,21 @@
 <br>
 <hr>
     <div class="gallery">
-        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
-        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
-        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
-        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
-        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
-        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
-        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
-        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
-        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/sayaka-makoto-kyoko.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/makoto-naegi.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/kyoko-kirigiri.jpg" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/chihiro-fujisaki.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/sakura-ogami.jpg" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/beautiful-girls-with-monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/ultra-despair-sisters.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/junko-w-bear.jpg" alt="girls" width="160" height="120">
     </div>
 
     <button onClick="reset_canvas()" type="button" class="reset button">Reset</button>
 
     <script src="./js/jscolor.js"></script>
     <script src="./js/color-book.js"></script>
-    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <!-- <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script> -->
     <script src="./js/jquery-functions.js"></script>
     
 </body> 

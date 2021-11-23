@@ -9,8 +9,8 @@
     canvas.width = 500;
 
     let start_background_color = "white";
-    context.fillStyle = start_background_color;
-    context.fillRect(0, 0, canvas.width, canvas.height);
+    // context.fillStyle = start_background_color;
+    // context.fillRect(0, 0, canvas.width, canvas.height);
 
 
     // Variables
@@ -62,11 +62,13 @@
             context.strokeStyle = draw_color;
             context.lineWidth = draw_width;
             context.lineCap = "round";
+            context.lineJoin = "round"; //To get a full line with less interruptions
+            
             context.stroke();
 
             //To make path smoother
             context.beginPath();
-            context.moveTo(event.clientX, event.clientY);
+            context.moveTo(event.clientX-canvas.offsetLeft, event.clientY-canvas.offsetLeft);
 
             event.preventDefault();
         }
@@ -100,7 +102,7 @@
         if (index === 0) {
             return;
         } else if (index < 0) {
-            clear_canvas();
+            reset_canvas();
         } else {
             
             removed_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
@@ -150,15 +152,17 @@
         //declaring the fill's color 
         context.fillStyle = start_background_color;
 
-        // drawing_image(imageValue);
+        drawing_image(imageValue);
 
         removed_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
+
+
     
         context.clearRect(0, 0, canvas.width, canvas.height); //clears the background
         context.fillRect(0, 0, canvas.width, canvas.height); //refills with white again
 
         //reset array and index
-        restore_array = [];
+        store_array = [];
         index = -1;
     
         removed_array = [];
