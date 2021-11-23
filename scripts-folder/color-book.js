@@ -43,7 +43,7 @@
 
     function start(event) {
         is_drawing = true;
-        draw(event);
+        draw(event); //needed to make dots
         
         event.preventDefault(); //To prevent default changes to appear
     }
