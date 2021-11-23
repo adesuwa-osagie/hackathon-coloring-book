@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Jquery moved here so it load before everything else -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danganronpa ColorBook</title>
-    <link rel="stylesheet" href="./css-folder/color-book.css">
+    <link rel="stylesheet" href="./css/color-book.css">
 </head>
 <body>
-    <canvas id="canvas"></canvas>
+    <div class="drawing">
+        <canvas id="canvas"></canvas>
 
-<div>
+        <div class="controls">
 
-    <button onClick="undo_last()" type="button" class="button">Undo</button>
-    <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
-    <button onClick="reset_canvas()" type="button" class="button">Reset</button>
+            <!-- JSColor Picker -->
+            Color: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
+            
+            <input type="range" min="1" max="100" class="pen-range" id="penRange" >
+            <p>Pen Size: <span id="pen-width"></span></p>
+            
+            <button onClick="erase_color()" type="button" class="erase button" id="erase">Erase</button>
 
-    <!-- JSColor Picker -->
-    Color: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
+            <div class="undo-redo">
+                <button onClick="undo_last()" type="button" class="undo button">Undo</button>
+                <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
+            </div>
 
-    <input type="range" min="1" max="100" class="pen-range" id="penRange" >
-    <p>Value: <span id="pen-width"></span></p>
+            <button onClick="saveCanvas()" type="button">Download Painting</button>
+  
+        </div>
+    </div>
+<br>
+<hr>
+    <div class="gallery">
+        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+        <img class="image" onClick="load_pic(this)" src="./images/Beautiful-girls-with-Monokuma.png" alt="girls" width="160" height="120">
+    </div>
 
-    <button onClick="erase_color()" type="button" class="button" id="erase">Erase</button>
+    <button onClick="reset_canvas()" type="button" class="reset button">Reset</button>
 
-
+    <script src="./js/jscolor.js"></script>
+    <script src="./js/color-book.js"></script>
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="./js/jquery-functions.js"></script>
     
-
-</div>
-    <script src="./scripts-folder/jscolor.js"></script>
-    <script src="./scripts-folder/color-book.js"></script>
 </body> 
 </html>

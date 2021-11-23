@@ -32,9 +32,12 @@
     let removed_array = [];
     let indexRemoved = -1;
 
-    
-
     // EventListeners
+
+    // For mobile and tablets
+    canvas.addEventListener("touchstart", start, false);
+    canvas.addEventListener("touchmove", draw, false);
+    canvas.addEventListener("touchend", stop, false);
 
 
     // For computer
@@ -165,7 +168,6 @@
     // LOADING IMAGE
     function load_pic(element) {
         imageValue = element.src;
-        console.log(imageValue)
         drawing_image(imageValue);
     }
 
@@ -174,7 +176,7 @@
 
         newImage.onload = function() {
             context.drawImage(newImage, 0, 0, canvas.width, canvas.height);
-            restore_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
+            store_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
             
             index += 1; // wi
         }
@@ -183,6 +185,24 @@
         }
     }
 
+    // SAVE CANVAS
+    function saveCanvas() {
+        //Note: window.navigator does not work
+    
+        if (canvas.msToBlob) { // IE/Edge (PNG only)
+            let blob = canvas.msToBlob();
+            window.navigator.msSaveBlob(blob, 'canvas-image.png');
+        } else { // Chrome, Internet Explorer    
+            const a = document.createElement("a");
+            document.body.appendChild(a);
+            a.href = canvas.toDataURL();
+            a.download = "canvas-image.png";
+            a.click();
+        }
+    }
 
+
+
+    
 
 // });

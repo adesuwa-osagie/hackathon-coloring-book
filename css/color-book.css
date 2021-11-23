@@ -1,0 +1,80 @@
+*, *::before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+
+
+
+    .drawing {
+        display: flex;
+    }
+
+    #canvas {
+        border: 2px solid black;
+        margin: 1em;
+        margin-top: 1.5em;;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5em;
+        margin-left: 1em;
+        gap: 2em;
+
+    }
+
+    .undo-redo {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 0.5em;
+        margin: 10px;
+    }
+
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 0.5em;
+        border: 2px solid green;
+        margin-top: 10px;
+    }
+
+    .image {
+        border: 1px solid pink;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    /* Similar to highlight for desktop */
+    .image:hover {
+        border: 3px solid orangered;
+        box-shadow: 8px 5px 10px gray;
+    }
+
+
+    .reset {
+        margin-top: 1em;
+        margin-right: 1em;
+        position: relative;
+        float: right;
+    }
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1260px) {
+
+    .image:hover {
+        border: 3px solid pink;
+        box-shadow: 8px 5px 10px gray;
+    }
+    .highlight {
+        border: 3px solid orangered;
+    }
+}
