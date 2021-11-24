@@ -150,16 +150,13 @@
     // RESET CANVAS
     function reset_canvas() {
         //declaring the fill's color 
-        
-        // drawing_image(imageValue);
-        
-        // removed_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
-        
-        
-        
         context.clearRect(0, 0, canvas.width, canvas.height); //clears the background
         context.fillStyle = "#f000c3";
         context.fillRect(0, 0, canvas.width, canvas.height); //refills with white again
+
+
+
+        drawing_image("./images/monokuma-backclear.png")
 
         //reset array and index
         store_array = [];

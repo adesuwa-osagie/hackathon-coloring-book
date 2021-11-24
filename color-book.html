@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="./css/color-book.css">
 </head>
 <body>
-    <ul class="nav_bar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="color-book.html">Test</a></li>
-    </ul>
+
 
     <!-- <nav>
         <a href="index.html">Back to Homepage</a> |
@@ -23,6 +20,7 @@
      -->
 
     <div class="drawing">
+    <div class="top_drawing">
         <p class="despair-message">This is app is not compatible with this device. Enjoy the despair.</p>
 
         <canvas id="canvas"></canvas>
@@ -45,13 +43,22 @@
             </div>
 
             <button onClick="saveCanvas()" type="button">Download Painting</button>
-  
         </div>
     </div>
 
+        <div class="name_pic"></div>
+
+
+    <!-- .drawing end div -->
+    </div> 
+
 <hr class="horizontal_rule">
     <div class="gallery">
-        <img class="image" onClick="load_pic(this)" src="./images/sayaka-makoto-kyoko.png" alt="girls" width="160" height="120">
+        <div>
+            <img class="image" onClick="load_pic(this)" src="./images/sayaka-makoto-kyoko.png" alt="girls" width="160" height="120">
+            <p style=display:none>smk</p>
+        </div>
+        
         <img class="image" onClick="load_pic(this)" src="./images/makoto-naegi.png" alt="girls" width="160" height="120">
         <img class="image" onClick="load_pic(this)" src="./images/kyoko-kirigiri.jpg" alt="girls" width="160" height="120">
         <img class="image" onClick="load_pic(this)" src="./images/chihiro-fujisaki.png" alt="girls" width="160" height="120">
@@ -61,9 +68,19 @@
         <img class="image" onClick="load_pic(this)" src="./images/junko-w-bear.jpg" alt="girls" width="160" height="120">
     </div>
 
+    
+
     <hr>
 
     <button onClick="reset_canvas()" type="button" class="reset button">Reset</button>
+
+
+    <nav id="nav">
+        <ul class="tablet_nav_list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="color-book.html">Coloring Book</a></li>
+        </ul>
+    </nav>
 
     <script src="./js/jscolor.js"></script>
     <script src="./js/color-book.js"></script>
