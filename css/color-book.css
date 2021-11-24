@@ -79,7 +79,7 @@ body {
         background-size: 50%;
         padding: 1em;
         margin-bottom: 1em;
-        box-shadow: 0px 10px 5px 0px rgba(39, 39, 39, 0.5);
+        box-shadow: 0px 8px 5px 0px rgba(39, 39, 39, 0.5); 
           
     }
 
@@ -138,7 +138,7 @@ body {
         margin-top: 10px;
         position: relative;
         padding: 1em;
-        box-shadow: 0px 10px 5px 0px rgba(39, 39, 39, 0.5);
+        box-shadow: 0px 8px 5px 0px rgba(39, 39, 39, 0.5);    
     }
 
     .gallery:before {
@@ -167,6 +167,10 @@ body {
     .image:hover {
         border: 3px solid #f000c3;
         box-shadow: 8px 5px 10px gray;
+    }
+
+    .image ~ p {
+        display: none;
     }
 
     .reset {
