@@ -8,9 +8,9 @@
     canvas.height = 500;
     canvas.width = 500;
 
-    let start_background_color = "white";
-    // context.fillStyle = start_background_color;
-    // context.fillRect(0, 0, canvas.width, canvas.height);
+    let start_background_color = "#B7B7B7CF";
+    context.fillStyle = start_background_color;
+    context.fillRect(0, 0, canvas.width, canvas.height);
 
 
     // Variables
@@ -150,15 +150,15 @@
     // RESET CANVAS
     function reset_canvas() {
         //declaring the fill's color 
-        context.fillStyle = start_background_color;
-
-        drawing_image(imageValue);
-
-        removed_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
-
-
-    
+        
+        // drawing_image(imageValue);
+        
+        // removed_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
+        
+        
+        
         context.clearRect(0, 0, canvas.width, canvas.height); //clears the background
+        context.fillStyle = "#f000c3";
         context.fillRect(0, 0, canvas.width, canvas.height); //refills with white again
 
         //reset array and index
@@ -167,6 +167,8 @@
     
         removed_array = [];
         indexRemoved = -1;
+
+        document.querySelector(".redo").disabled = true;
     }
 
     // LOADING IMAGE
@@ -182,10 +184,10 @@
             context.drawImage(newImage, 0, 0, canvas.width, canvas.height);
             store_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
             
-            index += 1; // wi
+            index += 1; 
         }
         if (image !== undefined) {
-        newImage.src = image;
+            newImage.src = image;
         }
     }
 

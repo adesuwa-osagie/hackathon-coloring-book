@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="./css/color-book.css">
 </head>
 <body>
+    <ul class="nav_bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="color-book.html">Test</a></li>
+    </ul>
+
+    <!-- <nav>
+        <a href="index.html">Back to Homepage</a> |
+        <a href="index.html">Back to Homepage</a> 
+    </nav>
+     -->
+
     <div class="drawing">
         <p class="despair-message">This is app is not compatible with this device. Enjoy the despair.</p>
 
@@ -37,8 +48,8 @@
   
         </div>
     </div>
-<br>
-<hr>
+
+<hr class="horizontal_rule">
     <div class="gallery">
         <img class="image" onClick="load_pic(this)" src="./images/sayaka-makoto-kyoko.png" alt="girls" width="160" height="120">
         <img class="image" onClick="load_pic(this)" src="./images/makoto-naegi.png" alt="girls" width="160" height="120">
@@ -49,6 +60,8 @@
         <img class="image" onClick="load_pic(this)" src="./images/ultra-despair-sisters.png" alt="girls" width="160" height="120">
         <img class="image" onClick="load_pic(this)" src="./images/junko-w-bear.jpg" alt="girls" width="160" height="120">
     </div>
+
+    <hr>
 
     <button onClick="reset_canvas()" type="button" class="reset button">Reset</button>
 
