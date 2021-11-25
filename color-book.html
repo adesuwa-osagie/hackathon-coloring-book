@@ -10,6 +10,7 @@
     <title>Danganronpa ColorBook</title>
     <link rel="stylesheet" href="./css/color-book.css">
     <link rel="icon" href="./images/monokuma-backclear.png">
+    <script src="https://kit.fontawesome.com/7dc5aac678.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="drawing">
@@ -18,26 +19,31 @@
 
         <canvas id="canvas"></canvas>
 
-        <div class="controls">
-
-            <div class="controls_front">
-                <!-- JSColor Picker -->
-                Color/Opacity: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
-
-                Dropper Here: <input onInput="draw_color = this.value" type="color" class="color-picker"> 
+        <div class="homeTablet_controls">
+            <i class="fas fa-house-damage homeTablet"></i>
+            <div class="controls">
                 
-                <input type="range" min="1" max="100" class="pen-range" id="penRange" >
-                <p>Pen Size: <span id="pen-width"></span></p>
-                
-                <button onClick="erase_color()" type="button" class="erase button" id="erase">Erase</button>
 
-                <div class="undo-redo">
-                    <button onClick="undo_last()" type="button" class="undo button">Undo</button>
-                    <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
+                <div class="controls_front">
+                    <!-- JSColor Picker -->
+                    Color/Opacity: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
+
+                    Dropper Here: <input onInput="draw_color = this.value" type="color" class="color-picker"> 
+                    
+                    <input type="range" min="1" max="100" class="pen_range" id="penRange" >
+                    <p>Pen Size: <span id="pen-width"></span></p>
+                    
+                    <button onClick="erase_color()" type="button" class="erase button" id="erase">Erase</button>
+
+                    <div class="undo-redo">
+                        <button onClick="undo_last()" type="button" class="undo button">Undo</button>
+                        <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
+                </div>
+
+                <button onClick="saveCanvas()" type="button">Download Painting</button>
+                </div>
+
             </div>
-
-            <button onClick="saveCanvas()" type="button">Download Painting</button>
-        </div>
 
         </div>
     </div>
@@ -67,7 +73,7 @@
 
         <div>
             <img class="image" onClick="load_pic(this)" src="./images/makoto-naegi.png" alt="girls" width="160" height="120">
-            <p>Makoto Naegi: Ultimate Lucky Student</p>
+            <p>Makoto Naegi: <span class="nameSubtitle">Ultimate Lucky Student</span></p>
         </div>
 
         <div>

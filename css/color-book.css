@@ -24,18 +24,18 @@
 
 /* DANGANRONPA "PAINTING" FONT */
 @font-face {
-    font-family: 'GillSansMT-Condensed';
-    src: url('GillSansMT-Condensed.svg#GillSansMT-Condensed') format('svg'),
-         url('GillSansMT-Condensed.ttf') format('truetype'),
-         url('GillSansMT-Condensed.woff') format('woff');
+    font-family: '../fonts/GillSansMT-Condensed';
+    src: url('../fonts/GillSansMT-Condensed.svg#GillSansMT-Condensed') format('svg'),
+         url('../fonts/GillSansMT-Condensed.ttf') format('truetype'),
+         url('../fonts/GillSansMT-Condensed.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
-    font-family: 'gills-sans.TTF';
-    src: url('gills-sans.TTF.eot');
-    src: url('gills-sans.TTF.eot?#iefix') format('embedded-opentype');
+    font-family: '../fonts/gills-sans.TTF';
+    src: url('../fonts/gills-sans.TTF.eot');
+    src: url('../fonts/gills-sans.TTF.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }  
@@ -99,9 +99,26 @@ body {
         
     }
 
-    .controls {
+    .homeTablet_controls {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid white; */
+    }
 
-        margin-top: 2.5em;
+    .homeTablet {
+        color: white;
+        margin-left: 80%;
+        font-size: 2em;
+    }
+
+    .homeTablet:hover {
+        color: #f000c3;
+        
+    }
+    
+
+    .controls {
+        margin-top: 1em;
         margin-left: 1em;
  
         border: 2px solid white;
@@ -109,7 +126,7 @@ body {
         
         position: relative;
         font-family: 'trebuc', sans-serif;
-        font-size: 1em;
+        font-size: 1.2em;
         color: white;
         border-radius: 15px;
         
@@ -122,8 +139,12 @@ body {
         flex-direction: column;
         gap: 1.5em;
         position: relative;
-        padding: 0.3em;
+        padding: 0.2em;
         
+    }
+
+    .pen_range {
+
     }
 
     .undo-redo {
@@ -150,8 +171,6 @@ body {
         padding-bottom: 4em;
     }
 
-
-    
     .drawingBlink {
         /* border: 1px solid blue; */
         margin-top: 0.98em;
@@ -160,6 +179,8 @@ body {
         height: 77.5px;
         width: 270px;
     }
+
+
 
     .painting {
         /* border: 1px solid darkblue; */
@@ -176,7 +197,7 @@ body {
         
         
     }
-
+ 
     .horizontal_rule {
         border: 5px solid #4b0d0d;
         width: 80%;
