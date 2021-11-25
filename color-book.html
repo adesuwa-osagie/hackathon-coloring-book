@@ -20,26 +20,39 @@
 
         <div class="controls">
 
-            <!-- JSColor Picker -->
-            Color/Opacity: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
+            <div class="controls_front">
+                <!-- JSColor Picker -->
+                Color/Opacity: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
 
-            Dropper Here: <input onInput="draw_color = this.value" type="color" class="color-picker"> 
-            
-            <input type="range" min="1" max="100" class="pen-range" id="penRange" >
-            <p>Pen Size: <span id="pen-width"></span></p>
-            
-            <button onClick="erase_color()" type="button" class="erase button" id="erase">Erase</button>
+                Dropper Here: <input onInput="draw_color = this.value" type="color" class="color-picker"> 
+                
+                <input type="range" min="1" max="100" class="pen-range" id="penRange" >
+                <p>Pen Size: <span id="pen-width"></span></p>
+                
+                <button onClick="erase_color()" type="button" class="erase button" id="erase">Erase</button>
 
-            <div class="undo-redo">
-                <button onClick="undo_last()" type="button" class="undo button">Undo</button>
-                <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
+                <div class="undo-redo">
+                    <button onClick="undo_last()" type="button" class="undo button">Undo</button>
+                    <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
             </div>
 
             <button onClick="saveCanvas()" type="button">Download Painting</button>
         </div>
+
+        </div>
     </div>
 
+    <div class="nameDrawingWord">
+
         <div class="name_pic"></div>
+        <div class="drawingBlink">
+            <div class="painting">
+                <p>Painting</p>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <!-- .drawing end div -->
@@ -49,44 +62,42 @@
     <div class="gallery">
         <div>
             <img class="image" onClick="load_pic(this)" src="./images/sayaka-makoto-kyoko.png" alt="girls" width="160" height="120">
-            <p>Sayaka Maizono: Ultimate Pop Sensation</p>
-            <p>Makoto Naegi: Ultimate Lucky Student</p>
-            <p>Kyoko Kirigiri: Ultimate ???</p>
+            <p>Sayaka Maizono, Makoto Naegi, and Kyoko Kirigiri</p>
         </div>
 
         <div>
             <img class="image" onClick="load_pic(this)" src="./images/makoto-naegi.png" alt="girls" width="160" height="120">
-            <p>Sayaka Maizono: Ultimate Pop Sensation</p>
+            <p>Makoto Naegi: Ultimate Lucky Student</p>
         </div>
 
         <div>
             <img class="image" onClick="load_pic(this)" src="./images/kyoko-kirigiri.jpg" alt="girls" width="160" height="120">
-            <p>smk</p>
+            <p>Kyoko Kirigiri: Ultimate ???</p>
         </div> 
 
         <div>
             <img class="image" onClick="load_pic(this)" src="./images/chihiro-fujisaki.png" alt="girls" width="160" height="120">
-            <p>smk</p>
+            <p>Chihiro Fujisaki: Ultimate Programmer</p>
         </div> 
 
         <div>
             <img class="image" onClick="load_pic(this)" src="./images/sakura-ogami.jpg" alt="girls" width="160" height="120">
-            <p>smk</p>
+            <p>Sakura Ogami: Ultimate Martial Artist</p>
         </div> 
 
         <div>
             <img class="image" onClick="load_pic(this)" src="./images/beautiful-girls-with-monokuma.png" alt="girls" width="160" height="120">
-            <p>smk</p>
+            <p>Aoi Asahina, Chihiro Fujisaki, Sayaka Maizono, and Monokuma</p>
         </div>  
 
          <div>
             <img class="image" onClick="load_pic(this)" src="./images/ultra-despair-sisters.png" alt="girls" width="160" height="120">
-            <p>smk</p>
+            <p>Mukuro Ikusaba and Junko Enoshima: Ultra Despair Sisters</p>
         </div>
         
         <div>
             <img class="image" onClick="load_pic(this)" src="./images/junko-w-bear.jpg" alt="girls" width="160" height="120">
-            <p>smk</p>
+            <p>Junko and Monokuma</p>
         </div>
         
         
@@ -96,15 +107,18 @@
 
     <hr>
 
-    <button onClick="reset_canvas()" type="button" class="reset button">Reset</button>
+    <div class="nav_tablet">
+        <button onClick="reset_canvas()" type="button" class="reset button">Destory Painting</button>
+    </div>
+    
 
 
-    <nav id="nav">
+    <!-- <nav id="nav">
         <ul class="tablet_nav_list">
             <li><a href="index.html">Home</a></li>
             <li><a href="color-book.html">Coloring Book</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
     <script src="./js/jscolor.js"></script>
     <script src="./js/color-book.js"></script>

@@ -1,5 +1,5 @@
 
-const nameT = document.querySelector(".name_pic");
+const namePic = document.querySelector(".name_pic");
     
     // HIGHlIGHT CURRENT IMAGE
     $(".image").click(function () {
@@ -10,5 +10,5 @@ const nameT = document.querySelector(".name_pic");
     // GET NAME OF PIC TO APPEAR
 
     $(".image").click(function() {
-        nameT.textContent = $(this).next('p').text();
+        namePic.textContent = $(this).siblings().text();
     });

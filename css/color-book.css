@@ -1,3 +1,45 @@
+/* DANGANRONPA NAMES FONT */
+@font-face {
+    font-family: 'DorBlue';
+    src: url('../fonts/DorBlue.eot');
+    src: url('../fonts/DorBlue.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DorBlue.svg#DorBlue') format('svg'),
+         url('../fonts/DorBlue.ttf') format('truetype'),
+         url('../fonts/DorBlue.woff') format('woff'),
+         url('../fonts/DorBlue.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* DANGANRONPA DIALOGUE FONT */
+@font-face {
+    font-family: 'trebuc';
+    src: url('../fonts/trebuc.eot');
+    src: url('../fonts/trebuc.eot') format('embedded-opentype'),
+         url('../fonts/trebuc.woff2') format('woff2'),
+         url('../fonts/trebuc.woff') format('woff'),
+         url('../fonts/trebuc.ttf') format('truetype'),
+         url('../fonts/trebuc.svg#trebuc') format('svg');
+}
+
+/* DANGANRONPA "PAINTING" FONT */
+@font-face {
+    font-family: 'GillSansMT-Condensed';
+    src: url('GillSansMT-Condensed.svg#GillSansMT-Condensed') format('svg'),
+         url('GillSansMT-Condensed.ttf') format('truetype'),
+         url('GillSansMT-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'gills-sans.TTF';
+    src: url('gills-sans.TTF.eot');
+    src: url('gills-sans.TTF.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+
 *, *::before, *:after {
     margin: 0;
     padding: 0;
@@ -8,48 +50,6 @@ body {
     display: hidden;
     background: black;
 }
-
-
-
-#nav {
-    /* position: absolute; */
-    /* z-index: 5; */
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    /* border: 1px solid blue; */
-    /* background: white; */  
-}
-
-.tablet_nav_list {
-    display: flex;
-    list-style-type: none;
-    /* background-color: white; */
-    padding: 1em;
-    /* align-items: center; */
-    justify-content: center;
-}
-
-.tablet_nav_list li a {
-    text-decoration: none;
-    background-color: white;
-    padding: 1em;
-    border: 1px solid black;
-    margin-left: 2em;
-    border-radius: 5%;
-}
-
-  
-  li a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-
 
 .despair-message {
     visibility: visible;
@@ -67,9 +67,10 @@ body {
     body {
         visibility: visible;
         background: linear-gradient(162deg, rgba(127,123,130,1) 11%, rgba(184,57,52,1) 35%, rgba(142,106,109,1) 60%, rgba(196,43,35,1) 76%, rgba(145,102,104,1) 82%, rgba(147,25,24,1) 100%);
-        height: 100%;
+        height: 100vh;
         position: relative;
         background-repeat: no-repeat;
+
     }
 
     .drawing {
@@ -87,15 +88,6 @@ body {
         display: flex;
     }
 
-    .name_pic {
-        border: 5px solid green;
-        margin-top: 1em;
-        height: 70px;
-        width: 300px;
-        background-color:rgba(39, 39, 39, 0.8);
-        color: white;
-    }
-
     #canvas {
         border: 2px solid black;
         margin-top: 0.5em; 
@@ -103,16 +95,35 @@ body {
         background-size: 400px;
         background-repeat: no-repeat;
         background-position: center;
-        box-shadow: 12px -8px 1px 2px rgba(109, 19, 19, 0.5);    
+        box-shadow: 10px -8px 1px 2px rgba(109, 19, 19, 0.5); 
+        
     }
 
     .controls {
-        display: flex;
-        flex-direction: column;
+
         margin-top: 2.5em;
         margin-left: 1em;
-        gap: 2em;
-        border: 2px solid orange;
+ 
+        border: 2px solid white;
+        background: #333132;
+        
+        position: relative;
+        font-family: 'trebuc', sans-serif;
+        font-size: 1em;
+        color: white;
+        border-radius: 15px;
+        
+    }
+
+
+
+    .controls_front {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        position: relative;
+        padding: 0.3em;
+        
     }
 
     .undo-redo {
@@ -122,7 +133,51 @@ body {
         margin: 10px;
     }
 
-    .horizontal_rule{
+    .nameDrawingWord {
+        display:flex
+    }
+
+    .name_pic {
+        /* border: 1px solid green; */
+        margin-top: .83em;
+        height: 70px;
+        width: 320px;
+        background-color:white;
+        color: black;
+        font-family: 'DorBlue', sans-serif;
+        font-size: 1.2em;
+        padding-left: 0.5em;
+        padding-bottom: 4em;
+    }
+
+
+    
+    .drawingBlink {
+        /* border: 1px solid blue; */
+        margin-top: 0.98em;
+        background-color: #218acc;
+        border-radius: 0 30px 30px 0;
+        height: 77.5px;
+        width: 270px;
+    }
+
+    .painting {
+        /* border: 1px solid darkblue; */
+        margin-top: 6%;
+        text-align: center;
+        
+    }
+
+    .painting p {
+        text-transform: uppercase;
+        color: white;
+        font-family: 'GillSansMT-Condensed', sans-serif;
+        font-size: 2em;
+        
+        
+    }
+
+    .horizontal_rule {
         border: 5px solid #4b0d0d;
         width: 80%;
         margin: auto;
@@ -138,7 +193,8 @@ body {
         margin-top: 10px;
         position: relative;
         padding: 1em;
-        box-shadow: 0px 8px 5px 0px rgba(39, 39, 39, 0.5);    
+        box-shadow: 0px 8px 5px 0px rgba(39, 39, 39, 0.5);
+           
     }
 
     .gallery:before {
@@ -160,7 +216,7 @@ body {
         border: 3px solid pink;
         margin: 5px;
         padding: 8px;
-        position: relative
+        position: relative;
     }
 
     /* Similar to highlight for desktop */
@@ -171,13 +227,25 @@ body {
 
     .image ~ p {
         display: none;
+        
     }
 
+    .nav_tablet {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 0.5em;
+        justify-content: center;
+        
+    }
+
+
     .reset {
-        margin-left: 50%;
-        margin-top: 3em;
+        border: 1px solid white;
+        margin-top: 1em;
+        /* margin-left: 50%;
+        margin-top: 1em; */
        
-        position: relative;  
+        
     }
 }
 
