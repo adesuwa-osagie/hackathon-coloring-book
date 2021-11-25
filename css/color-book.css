@@ -78,7 +78,7 @@ body {
     .drawing {
         display: flex;
         flex-direction: column;
-        background-image: url("/images/backgrounds/danganronpa-floor.jpg");
+        background-image: url("/images/backgrounds/floor.jpg");
         background-size: 50%;
         padding: 1em;
         margin-bottom: 1em;
