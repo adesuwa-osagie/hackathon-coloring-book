@@ -60,7 +60,7 @@ body {
     font-size: 2rem;
     text-align: center;
     place-items: center;
-    font-style: 
+
 
 }
 
@@ -83,6 +83,11 @@ body {
     background-image: url("/images/backgrounds/monokuma's_gloomy_sunday.jpg");
     background-size: cover;
     background-position: 100%;
+}
+
+.colorBook {
+    font-size: 2em;
+    color:white;
 }
 
 /* TABLET */
