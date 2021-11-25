@@ -49,6 +49,7 @@
 body {
     display: hidden;
     background: black;
+    cursor: pointer;
 }
 
 .despair-message {
@@ -110,8 +111,13 @@ body {
 
     .homeTablet {
         color: white;
-        margin-left: 80%;
+        /* margin-left: 80%; */
         font-size: 2em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
     }
 
     .homeTablet:hover {
@@ -126,10 +132,9 @@ body {
     .controls {
         margin-top: 2em;
         margin-left: 0.8em;
- 
-        border: 2px solid white;
+
         background: #333132;
-        
+        border: 2px solid white;
         position: relative;
         font-family: 'trebuc', sans-serif;
         font-size: 1.2em;
@@ -284,9 +289,11 @@ body {
         grid-template-columns: repeat(4, auto);
         gap: 0.5em;
         margin-top: 10px;
+        margin-bottom: 10px;
         position: relative;
         padding: 1em;
         box-shadow: 0px 8px 5px 0px rgba(39, 39, 39, 0.5);
+
     }
 
     .gallery:before {
@@ -332,6 +339,7 @@ body {
         background-color: #f44336;
         font-size: 1.5em;
         border-radius: 8px; 
+
     }
 
     .reset:active {
@@ -341,40 +349,44 @@ body {
 
     .reset:hover {
         color: white;
+        /* transform: scale(1.1); */
     }
 
 
 }
 
 /* DESKTOP */
-
 @media only screen and (min-width: 1260px) {
 
-}
-
-
-@media only screen and (min-width: 1260px) {
-
-
+    /* #canvas {
+        margin-left: 30%
+    } */
+    .top_drawing {
+        /* margin-top: 1em; */
+        top:0;
+        right:0;
+    }
 
     .homeTablet {
         display: none;
+        position: absolute;
+        top:0;
+        right:0;    
     }
 
     .homeDesktop {
-        display: flex;
+        display: block;
         color: black;
         font-size: 2em;
         text-decoration: none;
         font-family: 'trebuc';
-        margin-left: 10rem;
+        margin-left: 15rem;
         background-color: white;
         height: 60px;
         padding: 10px;
-        
-      
-
-        
+        position: absolute;
+        top:0;
+        right:0;
     }
 
     .homeDesktop:hover {

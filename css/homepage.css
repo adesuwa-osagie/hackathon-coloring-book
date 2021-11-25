@@ -1,0 +1,88 @@
+/* DANGANRONPA NAMES FONT */
+@font-face {
+    font-family: 'DorBlue';
+    src: url('../fonts/DorBlue.eot');
+    src: url('../fonts/DorBlue.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DorBlue.svg#DorBlue') format('svg'),
+         url('../fonts/DorBlue.ttf') format('truetype'),
+         url('../fonts/DorBlue.woff') format('woff'),
+         url('../fonts/DorBlue.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* DANGANRONPA DIALOGUE FONT */
+@font-face {
+    font-family: 'trebuc';
+    src: url('../fonts/trebuc.eot');
+    src: url('../fonts/trebuc.eot') format('embedded-opentype'),
+         url('../fonts/trebuc.woff2') format('woff2'),
+         url('../fonts/trebuc.woff') format('woff'),
+         url('../fonts/trebuc.ttf') format('truetype'),
+         url('../fonts/trebuc.svg#trebuc') format('svg');
+}
+
+/* DANGANRONPA "PAINTING" FONT */
+@font-face {
+    font-family: '../fonts/GillSansMT-Condensed';
+    src: url('../fonts/GillSansMT-Condensed.svg#GillSansMT-Condensed') format('svg'),
+         url('../fonts/GillSansMT-Condensed.ttf') format('truetype'),
+         url('../fonts/GillSansMT-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: '../fonts/gills-sans.TTF';
+    src: url('../fonts/gills-sans.TTF.eot');
+    src: url('../fonts/gills-sans.TTF.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+
+*, *::before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: hidden;
+    background: black;
+    cursor: pointer;
+}
+
+/* MOBILE FIRST */
+
+.despair-message p {
+    margin-top: 2em;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    place-items: center;
+    font-style: 
+
+}
+
+.despair-image {
+    margin-top: 2em;
+    position: relative;
+    margin-left: 19%;
+    height: 150px;
+    width: 250px;
+    border: 2px solid white;
+}
+
+.despair-image:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/backgrounds/monokuma's_gloomy_sunday.jpg");
+    background-size: cover;
+    background-position: 100%;
+}
+
+/* TABLET */

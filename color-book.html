@@ -14,64 +14,61 @@
 </head>
 <body>
     <div class="drawing">
-    <div class="top_drawing">
-        <p class="despair-message">This is app is not compatible with this device. Enjoy the despair.</p>
+        <div class="top_drawing">
 
-        <canvas id="canvas"></canvas>
+            <canvas id="canvas"></canvas>
 
-        <div class="homeTablet_controls">
-            <a href="index.html" class="homeTablet"><i class="fas fa-house-damage"></i></a>
+            <div class="homeTablet_controls">
+               
 
-            <div class="controls">
-                
-
-                <div class="controls_front">
-                    <!-- JSColor Picker -->
-                    <p class="color-text">Color/Opacity: </p><input onInput="draw_color = this.value" value="#000000FF" class="color-picker color_opac" data-jscolor="{}">
-
-                    <p class="color-text">Dropper Here: </p><input onInput="draw_color = this.value" type="color" class="color-picker"> 
+                <div class="controls">
                     
-                    <p class="pen-text">Pen Size: <span id="pen-width"></span></p>
-                    <input type="range" min="1" max="100" class="pen_range" id="penRange" >
-                    
-                    
-                    <button onClick="erase_color()" type="button" class="erase button" id="erase">Erase <i class="fa fa-eraser"></i></button>
 
-                    <div class="undo-redo">
-                        <button onClick="undo_last()" type="button" class="undo button">Undo</button>
-                        <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
-                    </div>
+                    <div class="controls_front">
+                        <!-- JSColor Picker -->
+                        <p class="color-text">Color/Opacity: </p><input onInput="draw_color = this.value" value="#000000FF" class="color-picker color_opac" data-jscolor="{}">
+
+                        <p class="color-text">Dropper Here: </p><input onInput="draw_color = this.value" type="color" class="color-picker"> 
+                        
+                        <p class="pen-text">Pen Size: <span id="pen-width"></span></p>
+                        <input type="range" min="1" max="100" class="pen_range" id="penRange" >
+                        
+                        
+                        <button onClick="erase_color()" type="button" class="erase button" id="erase">Erase <i class="fa fa-eraser"></i></button>
+
+                        <div class="undo-redo">
+                            <button onClick="undo_last()" type="button" class="undo button">Undo</button>
+                            <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
+                        </div>
 
 
-                    <div class="download">
-                        <div onClick="saveCanvas()" class="downloadText">
-                            <p>Download</p>
+                        <div class="download">
+                            <div onClick="saveCanvas()" class="downloadText">
+                                <p>Download</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+
+            <a href="index.html" class="homeDesktop">Back to Home <i class="fas fa-house-damage"></i></a>
 
         </div>
 
-        <a href="index.html" class="homeDesktop">Back to Home <i class="fas fa-house-damage"></i></a>
-
-    </div>
 
 
+        <div class="nameDrawingWord">
 
-    <div class="nameDrawingWord">
-
-        <div class="name_pic"></div>
-        <div class="drawingBlink">
-            <div class="painting">
-                <p>Painting</p>
+            <div class="name_pic"></div>
+            <div class="drawingBlink">
+                <div class="painting">
+                    <p>Painting</p>
+                </div>
             </div>
         </div>
-    </div>
 
-
-
-
+        <a href="index.html" class="homeTablet"><i class="fas fa-house-damage"></i></a>
     <!-- .drawing end div -->
     </div> 
 
@@ -143,20 +140,11 @@
 
     
 
-    <hr>
+    <hr class="horizontal_rule">
 
     <div class="nav_tablet">
         <button onClick="reset_canvas()" type="button" class="reset button">Destroy Painting</button>
     </div>
-    
-
-
-    <!-- <nav id="nav">
-        <ul class="tablet_nav_list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="color-book.html">Coloring Book</a></li>
-        </ul>
-    </nav> -->
 
     <script src="./js/jscolor.js"></script>
     <script src="./js/color-book.js"></script>
