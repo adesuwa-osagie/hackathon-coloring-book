@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <!-- Jquery moved here so it load before everything else -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +10,7 @@
     <link rel="stylesheet" href="./css/color-book.css">
     <link rel="icon" href="./images/monokuma-backclear.png">
     <script src="https://kit.fontawesome.com/7dc5aac678.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div class="drawing">
@@ -21,26 +21,33 @@
 
         <div class="homeTablet_controls">
             <i class="fas fa-house-damage homeTablet"></i>
+            
             <div class="controls">
                 
 
                 <div class="controls_front">
                     <!-- JSColor Picker -->
-                    Color/Opacity: <input onInput="draw_color = this.value" value="#000000FF" class="color-picker" data-jscolor="{}">
+                    <p class="color-text">Color/Opacity: </p><input onInput="draw_color = this.value" value="#000000FF" class="color-picker color_opac" data-jscolor="{}">
 
-                    Dropper Here: <input onInput="draw_color = this.value" type="color" class="color-picker"> 
+                    <p class="color-text">Dropper Here: </p><input onInput="draw_color = this.value" type="color" class="color-picker"> 
                     
+                    <p class="pen-text">Pen Size: <span id="pen-width"></span></p>
                     <input type="range" min="1" max="100" class="pen_range" id="penRange" >
-                    <p>Pen Size: <span id="pen-width"></span></p>
                     
-                    <button onClick="erase_color()" type="button" class="erase button" id="erase">Erase</button>
+                    
+                    <button onClick="erase_color()" type="button" class="erase button" id="erase">Erase <i class="fa fa-eraser"></i></button>
 
                     <div class="undo-redo">
                         <button onClick="undo_last()" type="button" class="undo button">Undo</button>
                         <button onClick="redo_last()" type="button" class="redo button" disabled>Redo</button>
-                </div>
+                    </div>
 
-                <button onClick="saveCanvas()" type="button">Download Painting</button>
+
+                    <div class="download">
+                        <div onClick="saveCanvas()" class="downloadText">
+                            <p>Download</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -114,7 +121,7 @@
     <hr>
 
     <div class="nav_tablet">
-        <button onClick="reset_canvas()" type="button" class="reset button">Destory Painting</button>
+        <button onClick="reset_canvas()" type="button" class="reset button">Destroy Painting</button>
     </div>
     
 

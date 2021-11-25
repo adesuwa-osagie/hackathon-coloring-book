@@ -142,7 +142,7 @@
     // ERASE
     function erase_color() {
         //To prevent the color of the main background
-        draw_color = start_background_color;
+        draw_color = "white";
     
         // context.globalCompositeOperation = 'destination-out'
     }

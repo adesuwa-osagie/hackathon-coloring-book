@@ -67,11 +67,12 @@ body {
     body {
         visibility: visible;
         background: linear-gradient(162deg, rgba(127,123,130,1) 11%, rgba(184,57,52,1) 35%, rgba(142,106,109,1) 60%, rgba(196,43,35,1) 76%, rgba(145,102,104,1) 82%, rgba(147,25,24,1) 100%);
-        height: 100vh;
+        height: 100%;
         position: relative;
         background-repeat: no-repeat;
 
     }
+    
 
     .drawing {
         display: flex;
@@ -118,8 +119,8 @@ body {
     
 
     .controls {
-        margin-top: 1em;
-        margin-left: 1em;
+        margin-top: 2em;
+        margin-left: 0.8em;
  
         border: 2px solid white;
         background: #333132;
@@ -129,29 +130,105 @@ body {
         font-size: 1.2em;
         color: white;
         border-radius: 15px;
-        
     }
-
-
 
     .controls_front {
         display: flex;
         flex-direction: column;
-        gap: 1.5em;
         position: relative;
-        padding: 0.2em;
-        
+        padding: 0.2em;  
+    }
+
+    .color-picker {
+        margin-left: 1.5rem;
+        margin-bottom: 1.5em;
+    }
+
+    .color_opac {
+       width: 10rem;
+    }
+
+    .color-text {
+        margin-bottom: 0.5em;
+        margin-left: 0.5em;
+    }
+
+    .pen-text {
+        margin-bottom: 0.3em;
+        margin-left: 0.5em;
     }
 
     .pen_range {
-
+        width: 12rem;
+        margin-left: 0.5em;
     }
+
+    .button {
+        text-decoration: none;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2em;  
+    }
+
+    .button:active {
+        transform: translateY(4px);
+    }
+
+    .erase {
+        margin-top: 1em;
+        background-color: pink;
+        color: white;
+        width: 10rem;
+        align-self: center;
+        border: 1px solid black;
+        color: black;
+        border-radius: 15px;
+        padding: 0.5rem;
+    }
+
+    
 
     .undo-redo {
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 0.5em;
         margin: 10px;
+        margin-top: 1em;
+    }
+
+    .undo, .redo {
+        border-radius: 0.5rem;
+    }
+
+    .redo {
+        background-color: black;
+        color: white;
+    }
+
+    .download {
+        background-color: none;
+        background-image: url("/images/orange-bullet.png");
+        height: 60px;
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:100%;
+        margin-top: 0.4em;
+        margin-bottom: 0;
+    }
+
+    .download:active {
+        transform: translateY(4px);
+    }
+
+    .downloadText {
+        /* text-align: center; */
+        /* border: 1px solid white; */
+        margin-top: 0.8em;
+        margin-left: 1.5em;
+        width: 100px;
+        color: black;
+        font-size: 1.2em;  
     }
 
     .nameDrawingWord {
@@ -180,13 +257,9 @@ body {
         width: 270px;
     }
 
-
-
     .painting {
-        /* border: 1px solid darkblue; */
         margin-top: 6%;
         text-align: center;
-        
     }
 
     .painting p {
@@ -194,15 +267,12 @@ body {
         color: white;
         font-family: 'GillSansMT-Condensed', sans-serif;
         font-size: 2em;
-        
-        
     }
  
     .horizontal_rule {
         border: 5px solid #4b0d0d;
         width: 80%;
-        margin: auto;
-        
+        margin: auto; 
     }
 
     .gallery {
@@ -210,12 +280,10 @@ body {
         background: gray;
         grid-template-columns: repeat(4, auto);
         gap: 0.5em;
-        /* border: 3px solid green; */
         margin-top: 10px;
         position: relative;
         padding: 1em;
         box-shadow: 0px 8px 5px 0px rgba(39, 39, 39, 0.5);
-           
     }
 
     .gallery:before {
@@ -261,12 +329,15 @@ body {
 
 
     .reset {
-        border: 1px solid white;
-        margin-top: 1em;
-        /* margin-left: 50%;
-        margin-top: 1em; */
-       
-        
+        /* border: 1px solid white; */
+        margin-top: 0.5em; 
+        background-color: #f44336;
+        font-size: 1.5em;
+        border-radius: 8px; 
+    }
+
+    .reset:active {
+        transform: translateY(4px);
     }
 }
 
