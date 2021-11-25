@@ -97,6 +97,8 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         box-shadow: 10px -8px 1px 2px rgba(109, 19, 19, 0.5); 
+        height: 500px;
+        width: 500px;
         
     }
 
@@ -116,7 +118,6 @@ body {
         color: #f000c3;
         
     }
-    
 
     .controls {
         margin-top: 2em;
@@ -185,8 +186,6 @@ body {
         border-radius: 15px;
         padding: 0.5rem;
     }
-
-    
 
     .undo-redo {
         display: grid;
@@ -344,10 +343,34 @@ body {
 /* DESKTOP */
 @media only screen and (min-width: 1260px) {
 
-    .nav_bar li a:hover {
-        background-color: #555;
-        color: white;
+    #canvas {
+        margin-left: 30%
     }
+
+    .homeTablet {
+        display: none;
+    }
+
+    .controls {
+        margin-left: 4rem;
+    }
+
+    .drawing {
+        margin-left: auto;
+    }
+
+    .name_pic {
+        width: 700px;
+        height: 77.5px;
+        padding-bottom: 0;
+        margin-top: 0.56em;
+    }
+
+    .name_pic {
+        font-size: 1.8rem;
+    }
+
+
 
     .image:hover {
         border: 3px solid #f000c3;
