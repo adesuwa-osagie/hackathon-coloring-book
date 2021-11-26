@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Jquery moved here so it load before everything else -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/homepage.css">
     <link rel="icon" href="./images/monokuma-backclear.png">
+    <script src="./js/hompage.js"></script>
 </head>
 <body>
 
-<div class="mobile">
-    <div class="despair-message">
-        <p >This app is not compatible with this device.</p>
-        <p>Enjoy the despair.</p>
-        <p class="catchphrase">Pupupu</p>
+    <div class="mobile">
+        <div class="despair-message">
+            <p >This app is not compatible with this device.</p>
+            <p>Enjoy the despair.</p>
+            <p class="catchphrase">Pupupu</p>
 
-        <div class="despair-image">     
-        </div>  
+            <div class="despair-image">     
+            </div>  
+        </div>
     </div>
-</div>
 
-<div class="tablet">
-    <div class="hero"></div>
-</div>
+    <div class="topnav">
+        <a class="logo" href=".index.html">LP</a>
+        
+        <div class="topnav-right">
+            <!-- <a class="navLink active" href="index.html">Home</a> -->
+            <a class="navLink" href="#about">About</a>
+            <a class="navLink" href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="lets-paint">
+        <div class="lets">Let's</div>
+        <div class="paint">Paint</div>
+    </div>
+ 
+
+        
 
 
 
-</div>
 
 
+    <script src="./js/jquery-functions.js"></script>
 </body>
 </html>

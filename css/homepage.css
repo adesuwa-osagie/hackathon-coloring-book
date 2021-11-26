@@ -22,6 +22,17 @@
          url('../fonts/trebuc.svg#trebuc') format('svg');
 }
 
+/* DANGANRONPA TRIGGER BULLET FONT */
+@font-face {
+    font-family: 'PoorRichard';
+    src: url('../fonts/PoorRichard.eot');
+    src: url('../fonts/PoorRichard.eot') format('embedded-opentype'),
+         url('../fonts/PoorRichard.woff2') format('woff2'),
+         url('../fonts/PoorRichard.woff') format('woff'),
+         url('../fonts/PoorRichard.ttf') format('truetype'),
+         url('../fonts/PoorRichard.svg#PoorRichard') format('svg');
+}
+
 /* DANGANRONPA "PAINTING" FONT */
 @font-face {
     font-family: '../fonts/GillSansMT-Condensed';
@@ -47,8 +58,7 @@
 }
 
 body {
-    
-    
+    color: white;
     cursor: pointer;
 }
 
@@ -68,17 +78,14 @@ body {
 
 .despair-message p {
     margin-top: 2em;
-    color: white;
+    
     font-size: 2rem;
     text-align: center;
     place-items: center;
     font-family: 'trebuc';
-    
-
 }
 
 .catchphrase {
-    
     margin-bottom: 1em;
 }
 
@@ -113,26 +120,114 @@ body {
 
 /* TABLET */
 @media only screen and (min-width: 768px) {
+    
     .mobile {
         display: none;
     }
     
     .despair-message {
         display: none;
-
     }
 
-    .tablet {
+    body {
         background: linear-gradient(rgba(230, 100, 100, 0), #000000), url("../images/homepage/peak-academy.png") ;
         height: 100vh;
         width: 100vw;
         background-size: cover;
         background-position: 50% 0;
         background-attachment: fixed;
-        
     }
 
+    /* NAVBAR */
+    .topnav {
+        background-color: black;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
 
+    .topnav a {
+        float: left;
+        text-align: center;
+        padding: 1em;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white;
+        font-family: 'trebuc'; 
+    }
 
+    .topnav-right a:hover {
+        background-color: white;
+        color: black;
+        transform: scale(1.1);
+    }
+
+    .topnav a.active {
+        background-color: white;
+        color: black;
+    }
+
+    .topnav-right {
+        float: right;
+    }
+
+    .lets-paint {
+        border: 3px solid white;
+        height: 100px;
+        width: 500px;
+        margin-top: 13em;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        position: relative;
+    }
+
+    .lets, .paint {
+        height: 100px;
+        width: 250px;
+        /* border: 1px solid green; */
+        display: inline-block;
+        font-family: 'DorBlue';
+        text-align: center;
+        padding: 0.8em;
+        font-size: 2em;
+  
+    }
+
+    .lets {
+        color: black;
+        background: white;
+    }
+
+    .paint {
+        background: black;
+    }
+
+    
+    .despair-image {
+        margin-top: 3em;
+        position: relative;
+        margin: 0 auto;
+        height: 150px;
+        width: 250px;
+        border: 2px solid white;
+        display: flex;
+        align-self: center;
+
+    }
+
+    .despair-image:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/backgrounds/monokuma_gloomy_sunday.jpg");
+        background-size: cover;
+        background-position: 100%;
+    }
     
 }
