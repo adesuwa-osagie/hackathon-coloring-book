@@ -9,9 +9,9 @@ animationButton.addEventListener("click", function () {
             // Blinking Painting Text
             paintingText.style.animationPlayState = 'paused';
             animationButton.classList.add("restart");
-            animationButton.textContent = "Restart Animations?";
+            animationButton.textContent = "Restart Animations";
             break;
-        case "Restart Animations?":
+        case "Restart Animations":
 
             animationButton.classList.remove("restart");
             // Blinking Painting Text

@@ -140,23 +140,7 @@ body {
         display: none;
     }
 
-    .animationButton {
-        height: 75px;
-        width: 75px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        border-radius: 8px;
-        color: black;
-        background-color: white;
-        font-family: 'trebuc', sans-serif;
-        cursor: url("../images/target-symbol.png"), pointer;
-    }
 
-    .restart {
-        color: white;
-        background-color: black;
-    }
 
     .controls {
         margin-top: 2em;
@@ -181,6 +165,7 @@ body {
     .color-picker {
         margin-left: 1.5rem;
         margin-bottom: 1.5em;
+        cursor: default;
     }
 
     .color_opac {
@@ -224,6 +209,11 @@ body {
         color: black;
         border-radius: 15px;
         padding: 0.5rem;
+    }
+
+    .erase:active {
+        color: white;
+        transform: translateY(3);
     }
 
     .undo-redo {
@@ -330,6 +320,49 @@ body {
         }
     }
  
+    .ross_animation {
+        display: flex;
+        /* flex-direction: column; */
+        /* border: 1px solid white; */
+        /* bottom: 0;
+        right: 0; */
+        margin-left: auto;
+        align-items: center;
+    }
+
+
+
+    .monoBobRoss {
+        height: 100px;
+        width: 100px;
+        /* border: 1px solid white; */
+        background-image: url("../images/monokuma-bobross.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+        /* margin-left: 5m; */
+        margin-left: auto;
+    }
+
+    .animationButton {
+        height: 75px;
+        width: 75px;
+        /* position: absolute; */
+        bottom: 0;
+        right: 0;
+        border-radius: 8px;
+        color: black;
+        background-color: white;
+        font-family: 'trebuc', sans-serif;
+        cursor: url("../images/target-symbol.png"), pointer;
+        margin-top: 0;
+    }
+
+    .restart {
+        color: white;
+        background-color: black;
+    }
+    
     .horizontal_rule {
         border: 5px solid #4b0d0d;
         width: 80%;

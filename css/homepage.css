@@ -60,17 +60,25 @@ body {
     font-size: 2rem;
     text-align: center;
     place-items: center;
-
+    font-family: 'trebuc';
+    
 
 }
 
+.catchphrase {
+    
+    margin-bottom: 1em;
+}
+
 .despair-image {
-    margin-top: 2em;
+    margin-top: 3em;
     position: relative;
-    margin-left: 19%;
+    margin: 0 auto;
     height: 150px;
     width: 250px;
     border: 2px solid white;
+    display: flex;
+    align-self: center;
 }
 
 .despair-image:before {
