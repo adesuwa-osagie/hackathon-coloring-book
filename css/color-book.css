@@ -471,11 +471,10 @@ body {
     .homeDesktop:hover {
         color: white;
         background-color: black;
-
         
     }
 
-    .homeDesktop .fas:hover{
+    .homeDesktop:hover .fas{
         color: #f000c3;
     }
 
