@@ -1,10 +1,11 @@
 
 const namePic = document.querySelector(".name_pic");
     
-    // HIGHlIGHT CURRENT IMAGE
+    // HIGHLIGHT CURRENT IMAGE
     $(".image").click(function () {
         $(".image").not(this).removeClass("highlight");
         $(this).addClass("highlight");
+        $(this).addClass("overlay")
     });
 
     // GET NAME OF PIC TO APPEAR

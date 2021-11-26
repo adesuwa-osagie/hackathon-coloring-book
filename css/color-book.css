@@ -22,6 +22,17 @@
          url('../fonts/trebuc.svg#trebuc') format('svg');
 }
 
+/* DANGANRONPA TRIGGER BULLET FONT */
+@font-face {
+    font-family: 'PoorRichard';
+    src: url('../fonts/PoorRichard.eot');
+    src: url('../fonts/PoorRichard.eot') format('embedded-opentype'),
+         url('../fonts/PoorRichard.woff2') format('woff2'),
+         url('../fonts/PoorRichard.woff') format('woff'),
+         url('../fonts/PoorRichard.ttf') format('truetype'),
+         url('../fonts/PoorRichard.svg#PoorRichard') format('svg');
+}
+
 /* DANGANRONPA "PAINTING" FONT */
 @font-face {
     font-family: 'GillSansMT-Condensed';
@@ -49,7 +60,7 @@
 body {
     display: hidden;
     background: black;
-    cursor: pointer;
+    cursor: url("../images/target-symbol.png"), pointer;
 }
 
 .despair-message {
@@ -83,7 +94,7 @@ body {
         padding: 1em;
         margin-bottom: 1em;
         box-shadow: 0px 8px 5px 0px rgba(39, 39, 39, 0.5); 
-          
+        position: relative;  
     }
 
     .top_drawing {
@@ -100,7 +111,7 @@ body {
         box-shadow: 10px -8px 1px 2px rgba(109, 19, 19, 0.5); 
         height: 500px;
         width: 500px;
-        
+        cursor: pointer;
     }
 
     .homeTablet_controls {
@@ -120,13 +131,31 @@ body {
         margin-right: 0.5em;
     }
 
-    .homeTablet:hover {
+    .homeTablet:hover, .homeTable:active {
         color: #f000c3;
         
     }
 
     .homeDesktop {
         display: none;
+    }
+
+    .animationButton {
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 8px;
+        color: black;
+        background-color: white;
+        font-family: 'trebuc', sans-serif;
+        cursor: url("../images/target-symbol.png"), pointer;
+    }
+
+    .restart {
+        color: white;
+        background-color: black;
     }
 
     .controls {
@@ -178,6 +207,7 @@ body {
         padding: 1rem;
         text-align: center;
         font-size: 1.2em;  
+        cursor: url("../images/target-symbol.png"), pointer;
     }
 
     .button:active {
@@ -236,8 +266,15 @@ body {
         margin-left: 1.5em;
         width: 100px;
         color: black;
-        font-size: 1.2em;  
+        font-size: 1.2em;
+        font-family: 'PoorRichard', serif; 
+        font-weight: bold; 
     }
+
+    .erase:hover, .undo:hover, .redo:hover, .download:hover {     
+        transform: scale(1.05);
+    }
+
 
     .nameDrawingWord {
         display:flex
@@ -250,6 +287,10 @@ body {
         width: 320px;
         background-color:white;
         color: black;
+        -webkit-text-stroke-width: 1.2px;
+        -webkit-text-stroke-color: gray;
+
+
         font-family: 'DorBlue', sans-serif;
         font-size: 1.2em;
         padding-left: 0.5em;
@@ -275,6 +316,18 @@ body {
         color: white;
         font-family: 'GillSansMT-Condensed', sans-serif;
         font-size: 2em;
+        letter-spacing: .2rem;
+
+    }
+
+    .blink {
+        animation: blinker 3s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
     }
  
     .horizontal_rule {
@@ -303,7 +356,7 @@ body {
         top: 0;
         width: 100%;
         height: 100%;
-        background-image: url("/images/hope-peak-academy.png");
+        background-image: url("../images/hope-peak-academy.png");
         background-size: 250px;
         background-repeat: no-repeat;
         background-position: center;
@@ -349,9 +402,12 @@ body {
 
     .reset:hover {
         color: white;
-        /* transform: scale(1.1); */
+        transform: scale(1.1);
     }
 
+    .highlight {
+        border: 4px solid #f000c3;
+    }
 
 }
 
@@ -387,6 +443,7 @@ body {
         position: absolute;
         top:0;
         right:0;
+        cursor: url("../images/target-symbol.png"), pointer;
     }
 
     .homeDesktop:hover {
@@ -432,7 +489,5 @@ body {
         display: block;
     }
     
-    .highlight {
-        border: 4px solid #f000c3;
-    }
+
 }
