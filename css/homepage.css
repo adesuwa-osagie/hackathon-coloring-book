@@ -280,6 +280,7 @@ body {
         align-self: center;
         border: 1px solid violet;
         background: rgb(207, 206, 206);
+        color: black;
     }
 
     .coloring-book:before {
