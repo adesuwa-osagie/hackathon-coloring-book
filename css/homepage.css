@@ -47,12 +47,24 @@
 }
 
 body {
-    display: hidden;
-    background: black;
+    
+    
     cursor: pointer;
 }
 
 /* MOBILE FIRST */
+.tabletUp {
+    display: none;
+}
+
+.mobile {
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: 50% 0;
+    padding-top: 2em;
+}
 
 .despair-message p {
     margin-top: 2em;
@@ -79,6 +91,7 @@ body {
     border: 2px solid white;
     display: flex;
     align-self: center;
+
 }
 
 .despair-image:before {
@@ -99,3 +112,27 @@ body {
 }
 
 /* TABLET */
+@media only screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+    
+    .despair-message {
+        display: none;
+
+    }
+
+    .tablet {
+        background: linear-gradient(rgba(230, 100, 100, 0), #000000), url("../images/homepage/peak-academy.png") ;
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: 50% 0;
+        background-attachment: fixed;
+        
+    }
+
+
+
+    
+}
