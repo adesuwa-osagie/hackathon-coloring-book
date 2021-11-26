@@ -410,9 +410,9 @@ body {
         
     }
 
-    .image-desktop {
+    /* .image-desktop {
         display: none;
-    }
+    } */
 
     .reset {
         /* border: 1px solid white; */
@@ -442,20 +442,14 @@ body {
 /* DESKTOP */
 @media only screen and (min-width: 1260px) {
 
-    /* #canvas {
-        margin-left: 30%
-    } */
     .top_drawing {
-        /* margin-top: 1em; */
+
         top:0;
         right:0;
     }
 
     .homeTablet {
         display: none;
-        position: absolute;
-        top:0;
-        right:0;    
     }
 
     .homeDesktop {
@@ -477,9 +471,13 @@ body {
     .homeDesktop:hover {
         color: white;
         background-color: black;
+
+        
     }
 
-
+    .homeDesktop .fas:hover{
+        color: #f000c3;
+    }
 
     .controls {
         margin-left: 4rem;
