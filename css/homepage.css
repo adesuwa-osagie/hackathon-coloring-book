@@ -174,7 +174,7 @@ body {
     }
 
     .lets-paint {
-        border: 3px solid white;
+        /* border: 3px solid white; */
         height: 100px;
         width: 500px;
         margin-top: 13em;
@@ -182,6 +182,7 @@ body {
         margin-right: auto;
         display: flex;
         position: relative;
+        margin-bottom: 2em;
     }
 
     .lets, .paint {
@@ -191,43 +192,107 @@ body {
         display: inline-block;
         font-family: 'DorBlue';
         text-align: center;
-        padding: 0.8em;
-        font-size: 2em;
-  
+        padding: 0.5em;
+        font-size: 2.5em;
+        text-transform: uppercase;
+
+        font-weight: bold;
+
     }
 
     .lets {
         color: black;
         background: white;
+        animation: slideInLeft 0.3s linear;
     }
 
     .paint {
         background: black;
+        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: gray;
+        animation: slideInRight 0.3s linear;
     }
-
     
-    .despair-image {
-        margin-top: 3em;
+    .danganronpa-logo {
         position: relative;
         margin: 0 auto;
         height: 150px;
-        width: 250px;
-        border: 2px solid white;
+        width: 500px;
         display: flex;
         align-self: center;
-
+        margin-bottom: 5em;
+        animation: flash 2s linear;
     }
 
-    .despair-image:before {
+    .danganronpa-logo:before {
         content: '';
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        background-image: url("../images/backgrounds/monokuma_gloomy_sunday.jpg");
+        background-image: url("../images/homepage/danganronpa-logo2.png");
         background-size: cover;
         background-position: 100%;
     }
     
+    /* MOVING LEFT ANIMATION */
+    /* Resource: https://codepen.io/hillse/pen/VWjEMy */
+    @keyframes slideInLeft {
+        0% {
+            transform:translateX(-100%); 
+            /* opacity: 0.1;   */
+            }
+        100% { 
+            transform:translateX(0%); 
+            /* opacity: 1;  */
+            }
+    }
+
+    @keyframes slideInRight {
+        0% {
+            transform:translateX(100%); 
+            /* opacity: 0.1;   */
+            }
+        100% { 
+            transform:translateX(0%); 
+            /* opacity: 1;  */
+            }
+    }
+
+    /* FLASH IN */
+    /* Resource: https://www.tutorialspoint.com/css/css_animation_flash.htm */
+    @keyframes flash {
+        0%, 50%, 100% {
+           opacity: 1;
+        }
+        25%, 75% {
+           opacity: 0;
+        }
+     }
+    
+    .coloring-book{
+        position: relative;
+        margin: 0 auto;
+        height: 150px;
+        width: 500px;
+        display: flex;
+        align-self: center;
+        border: 1px solid violet;
+        background: rgb(207, 206, 206);
+    }
+
+    .coloring-book:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* background-image: url("../images/homepage/danganronpa-logo2.png"); */
+        background-size: cover;
+        background-position: 100%;
+    }
+
+     
 }
