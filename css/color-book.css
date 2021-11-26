@@ -24,7 +24,7 @@
 
 /* DANGANRONPA "PAINTING" FONT */
 @font-face {
-    font-family: '../fonts/GillSansMT-Condensed';
+    font-family: 'GillSansMT-Condensed';
     src: url('../fonts/GillSansMT-Condensed.svg#GillSansMT-Condensed') format('svg'),
          url('../fonts/GillSansMT-Condensed.ttf') format('truetype'),
          url('../fonts/GillSansMT-Condensed.woff') format('woff');
@@ -78,7 +78,7 @@ body {
     .drawing {
         display: flex;
         flex-direction: column;
-        background-image: url("/images/backgrounds/floor.jpg");
+        background-image: url("../images/backgrounds/floor.jpg");
         background-size: 50%;
         padding: 1em;
         margin-bottom: 1em;
@@ -93,7 +93,7 @@ body {
     #canvas {
         border: 2px solid black;
         margin-top: 0.5em; 
-        background-image: url("/images/hope-peak-academy.png");
+        background-image: url("../images/hope-peak-academy.png");
         background-size: 400px;
         background-repeat: no-repeat;
         background-position: center;
@@ -215,7 +215,7 @@ body {
 
     .download {
         background-color: none;
-        background-image: url("/images/orange-bullet.png");
+        background-image: url("../images/orange-bullet.png");
         height: 60px;
         
         background-repeat: no-repeat;
