@@ -63,6 +63,7 @@ body {
 }
 
 /* MOBILE FIRST */
+
 .tabletUp {
     display: none;
 }
@@ -123,6 +124,10 @@ body {
     
     .despair-message {
         display: none;
+    }
+
+    .tabletUp {
+        display: block;
     }
 
     body {

@@ -26,7 +26,7 @@ $(document).ready(function() {
                     }, 500
                 );
 
-                console.log("hello world")
+                
             }
         });
     });
