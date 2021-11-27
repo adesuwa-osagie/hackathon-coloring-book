@@ -100,7 +100,9 @@
     // UNDO 
     function undo_last() {
         if (index === 0) {
-            return;
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.fillStyle = start_background_color;
+            context.fillRect(0, 0, canvas.width, canvas.height);
         } else if (index < 0) {
             reset_canvas();
         } else {
