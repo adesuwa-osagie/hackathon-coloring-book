@@ -159,6 +159,22 @@ body {
         font-family: 'trebuc'; 
     }
 
+    .monoAbout {
+        display: flex;
+        position:relative;
+    }
+/*
+    .navMono {
+        border: 1px solid green;
+        position: relative;
+        top: 200px;
+        height: 30px;
+        width: 30px;
+        top: 20%;
+        top: -6.5px;
+        
+    } */
+
     .topnav-right a:hover {
         background-color: white;
         color: black;
@@ -483,7 +499,7 @@ body {
         color: black;
         font-family: 'trebuc';
         flex-direction: column;
-        margin-bottom: 4rem;
+        margin-bottom: 12rem;
         border: 3px solid #f000c3;
         margin-top: -4em;
         padding: 2em;
@@ -527,7 +543,7 @@ body {
         background: #312f32;
         background-size: cover;
         background-position: 100%;
-        opacity: 0.65;
+        opacity: 0.70;
     }
 
     .what-else ul {
@@ -614,6 +630,12 @@ body {
         
         font-size: 1.5em;
         /* border: 1px solid green; */
+        transform: translateX(-100%);
+    }
+
+    .transformRight {
+        transform: translateX(0%);
+        transition-duration: 300ms;
     }
 
     .checkerboard {
@@ -658,7 +680,6 @@ body {
     .contact-checker {
         position: relative;
         height: 8em;
-       
     }
 
     .contact-checker:before {
