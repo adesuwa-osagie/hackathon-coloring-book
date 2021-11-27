@@ -470,7 +470,7 @@ body {
         /* position: absolute; */
         position: relative;
         margin: 0 auto;
-        height: 25rem;
+        height: 32rem;
         width: 540px;
         display: flex;
         align-self: center;
@@ -478,10 +478,10 @@ body {
         font-family: 'trebuc';
         flex-direction: column;
         margin-bottom: 4rem;
-        border: 3px solid violet;
+        border: 3px solid #f000c3;
         margin-top: -4em;
         padding: 2em;
-
+        box-shadow: 0 0 10px violet;
         
         
     }
@@ -501,14 +501,16 @@ body {
         background-position: center;
         background-image: url("../images/backgrounds/mintbean-monokuma.jpg");
         background-size: 50%;
-        opacity: .22;
+        opacity: .65;
     }
 
     .what-else-list {
-        border: 2px solid #f000c3;
+        border: 2px solid white;
         position: relative;
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        padding: 1em;
+        height: 18.5em;
     }
 
 
@@ -526,10 +528,22 @@ body {
         opacity: 0.65;
     }
 
-    .what-else p {
+    .what-else ul {
         padding: 0.5em;
         position: relative;
     }
+
+    .what-else ul li {
+        margin-bottom: 1em;
+    }
+
+    .hope {
+        color: #ffe200;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #aa7913;
+        text-shadow: 0 0 5px orange; 
+    }
+
     
 
     /* CONCAVE EFFECT */
