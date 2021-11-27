@@ -621,6 +621,7 @@ body {
         background-position: center;
         background-size:100%;
         z-index: 2;
+        box-shadow: 0 0 10px violet;
     }
 
     .bullet {
@@ -737,5 +738,15 @@ body {
 
     .about-gallery {
         width: 50%;
+    }
+
+    .bullet {
+        height: 2.5em;
+        
+    }
+
+    .bullet h2 {
+        margin-left: 2em;
+        font-size: 2em;
     }
 }
