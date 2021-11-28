@@ -102,6 +102,17 @@ To get a local copy up and running, follow these simple steps:
 
 * [CANVAS JavaScript Drawing App 🎨 | Draw ● Undo ● Erase ● Colors | Full HTML5 Canvas App Tutorial](https://www.youtube.com/watch?v=wCwKkT1P7vY)
 
-    * How this project differentiate from the above tutorial can view in this <a href="https://github.com/adesuwa-osagie/drawing-app-2" target="_blank">project<a>. There, I practiced how to make the canvas, corrected errors that were found during practice, and tested out ideas that were later added to this project.
+  * How this project differentiate from the above tutorial can view in this <a href="https://github.com/adesuwa-osagie/drawing-app-2" target="_blank">project<a>. There, I practiced how to make the canvas, corrected errors that were found during practice, and tested out ideas that were later added to this project.
 
 * [From Figma to code](https://scrimba.com/learn/figmatocode)
+  
+  * This was my go-to source for re-learning about "position: flex" and "position: absolute" within a couple of hours. Thanks to source, I was able to create my own technique: a double background with decreased opacity 😎.
+
+* [The YouTube Community](www.youtube.com)
+  
+  * From relearning about Danganronpa to learning techniques for creating images for backgrouds.
+
+* [Stack Overflow](https://stackoverflow.com/)
+  * Using non-technical terms, I was able to find solutions to techniques that I wanted to implement in this project.
+
+
