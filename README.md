@@ -10,7 +10,7 @@
   <h3 align="center">Danganronpa Coloring Book</h3>
 
   <p align="center">
-    A fan-made coloring booking app based on a Japenese visual novel franchise called <em>Danganronpa</em>
+    A fan-made coloring booking app based on the Japenese visual novel franchise called <em>Danganronpa</em>
   </p>
 </p>
 
@@ -59,15 +59,13 @@ The project was made for Mintbean's November 2021 Hiring Hackathon, using HTML, 
 * ![HTML](https://img.shields.io/badge/-HTML5-%23E34F26?style=flat&logo=html5&logoColor=white)
 * ![CSS](https://img.shields.io/badge/-CSS3-%231572B6?logo=css3)
 <br/>
-<br/>
 
 ---
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps:
+To get a local copy up and running, follow these simple steps:
 
 ### Prerequisites
 
