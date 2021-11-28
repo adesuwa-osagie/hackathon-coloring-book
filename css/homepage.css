@@ -159,22 +159,6 @@ body {
         font-family: 'trebuc'; 
     }
 
-    .monoAbout {
-        display: flex;
-        position:relative;
-    }
-/*
-    .navMono {
-        border: 1px solid green;
-        position: relative;
-        top: 200px;
-        height: 30px;
-        width: 30px;
-        top: 20%;
-        top: -6.5px;
-        
-    } */
-
     .topnav-right a:hover {
         background-color: white;
         color: black;
@@ -189,6 +173,19 @@ body {
     .topnav-right {
         float: right;
     }
+
+    .logo {
+        /* border: 1px solid pink; */
+        width: 4em;
+        height: 1em;
+        background-image: url("../images/homepage/logo-pink.png");
+        background-size: cover;
+        background-position: 100%;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+
 
     .lets-paint {
         /* border: 3px solid white; */
