@@ -175,16 +175,8 @@ body {
         float: right;
     }
 
-    .logo {
-        /* border: 1px solid pink; */
-        /* width: 2em; */
-        /* height: 1em; */
-        /* background-image: url("../images/homepage/logo-pink.png"); */
-        /* background-size: cover;
-        background-position: 100%; */
-        /* margin-top: 1rem;
-        margin-left: 2rem; */
-    }
+    /* FLIPPING IMAGE ON HOVER */
+    /* Resource: https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php */
 
     .logo img {
         position: relative;
@@ -192,6 +184,24 @@ body {
         height: 38px;
         margin-top: 0;
         margin-left: 0.5em;
+    }
+
+    .logo-flip {
+        position: relative;
+        display: inline-block;
+    }
+
+    .logo-flip .logo-black {
+        background-color: white;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+    .logo-flip:hover .logo-black {
+        display: inline;
     }
 
 
