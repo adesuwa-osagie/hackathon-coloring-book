@@ -19,14 +19,28 @@ $(document).ready(function() {
             let bottom_of_object = $(this).position().top + $(this).outerHeight();
             let bottom_of_window = $(window).scrollTop() + $(window).height();
 
-            if (bottom_of_window > bottom_of_object) {
-                $(this).animate(
-                    {
-                        "opacity":'1'
-                    }, 500
-                );
+            if ($(this).hasClass("what-else")) {
+                if (bottom_of_window > bottom_of_object*0.8) {
 
-                
+                    $(this).animate(
+                        {
+                            "opacity":'1'
+                        }, 500
+                    );
+                    
+                }
+                                  
+            } else {
+
+                if (bottom_of_window > bottom_of_object) {
+
+                    $(this).animate(
+                        {
+                            "opacity":'1'
+                        }, 500
+                    );
+                    
+                }
             }
         });
     });
