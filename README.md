@@ -43,6 +43,10 @@
 
 The project was made for Mintbean's November 2021 Hiring Hackathon, using HTML, CSS, JavaScript, and jQuery.
 
+### User Story
+
+As a user, I want to drag a mouse across a canvas to make free-form lines so that I can paint a picture. 
+
 ### Landing Page
 
 <a href="https://adesuwa-osagie.github.io/hackathon-coloring-book/" target="_blank">![Coloring Book Homepage](./images/screenshots/homepage-screenshot.png)</a>
