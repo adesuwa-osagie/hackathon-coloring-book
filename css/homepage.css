@@ -33,24 +33,6 @@
          url('../fonts/PoorRichard.svg#PoorRichard') format('svg');
 }
 
-/* DANGANRONPA "PAINTING" FONT */
-@font-face {
-    font-family: '../fonts/GillSansMT-Condensed';
-    src: url('../fonts/GillSansMT-Condensed.svg#GillSansMT-Condensed') format('svg'),
-         url('../fonts/GillSansMT-Condensed.ttf') format('truetype'),
-         url('../fonts/GillSansMT-Condensed.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: '../fonts/gills-sans.TTF';
-    src: url('../fonts/gills-sans.TTF.eot');
-    src: url('../fonts/gills-sans.TTF.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-  }  
-
 *, *::before, *:after {
     margin: 0;
     padding: 0;
@@ -69,21 +51,20 @@ body {
 }
 
 .mobile {
-    background: black;
-    height: 100vh;
     width: 100vw;
-    background-size: cover;
-    background-position: 50% 0;
+    height: 100vh;
     padding-top: 2em;
+    background: black;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .despair-message p {
+    place-items: center;
     margin-top: 2em;
-    
+    font-family: 'trebuc';
     font-size: 2rem;
     text-align: center;
-    place-items: center;
-    font-family: 'trebuc';
 }
 
 .catchphrase {
@@ -91,27 +72,26 @@ body {
 }
 
 .despair-image {
-    margin-top: 3em;
     position: relative;
-    margin: 0 auto;
-    height: 150px;
-    width: 250px;
-    border: 2px solid white;
-    display: flex;
     align-self: center;
+    display: flex;
+    width: 15.625rem;
+    height: 9.375rem;
+    margin: 0.1875rem auto 0;
+    border: 0.125rem solid white;
 
 }
 
 .despair-image:before {
     content: '';
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: url("../images/backgrounds/monokuma_gloomy_sunday.jpg");
-    background-size: cover;
     background-position: 100%;
+    background-size: cover;
 }
 
 
@@ -131,44 +111,43 @@ body {
     }
 
     body {
-        background: linear-gradient(rgba(230, 100, 100, 0), #000000), url("../images/homepage/peak-academy.png") ;
-        height: 100vh;
         width: 100vw;
-        background-size: cover;
-        background-position: 50% 0;
+        height: 100vh;
+        background: linear-gradient(rgba(230, 100, 100, 0), #000000), url("../images/homepage/peak-academy.png") ;
         background-attachment: fixed;
+        background-position: 50% 0;
+        background-size: cover;
     }
 
     /* NAVBAR */
     .topnav {
-        background-color: black;
-        overflow: hidden;
         position: fixed;
         top: 0;
-        width: 100%;
         z-index: 5;
+        width: 100%;
         height: 76px;
+        overflow: hidden;
+        background-color: black;
     }
 
     .topnav a {
         float: left;
-        text-align: center;
         padding: 1em;
-        text-decoration: none;
+        font-family: 'trebuc'; 
         font-size: 1.5em;
         color: white;
-        font-family: 'trebuc'; 
+        text-align: center;
+        text-decoration: none;
     }
 
     .topnav-right a:hover {
-        background-color: white;
         color: black;
-        /* transform: scale(1.1); */
+        background-color: white;
     }
 
     .topnav a.active {
-        background-color: white;
         color: black;
+        background-color: white;
     }
 
     .topnav-right {
@@ -180,10 +159,10 @@ body {
 
     .logo img {
         position: relative;
-        width: 70px;
-        height: 38px;
+        width: 4.375rem;
+        height: 2.375rem;
         margin-top: 0;
-        margin-left: 0.5em;
+        margin-left: 0.5rem;
     }
 
     .logo-flip {
@@ -192,81 +171,71 @@ body {
     }
 
     .logo-flip .logo-black {
-        background-color: white;
-        display: none;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 99;
+        display: none;
+        background-color: white;
     }
 
     .logo-flip:hover .logo-black {
         display: inline;
     }
 
-
-
     .lets-paint {
-        /* border: 3px solid white; */
-        height: 100px;
-        width: 500px;
-        margin-top: 13em;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
         position: relative;
-        margin-bottom: 2rem;
+        display: flex;
+        width: 31.25rem;
+        height: 6.25rem;
+        margin: 13rem auto 2rem;
     }
 
     .lets, .paint {
-        height: 80px;
-        width: 250px;
-        /* border: 1px solid green; */
+        height: 2.5em;
+        width: 7.8125em;
         display: inline-block;
-        font-family: 'DorBlue';
-        text-align: center;
         padding: 0.5em;
+        font-family: 'DorBlue';
         font-size: 2em;
-        text-transform: uppercase;
-
         font-weight: bold;
-
+        text-align: center;
+        text-transform: uppercase;
     }
 
     .lets {
         color: black;
         background: white;
-        animation: slideInLeft 0.3s linear;
+        animation: slideInLeft 300ms linear;
     }
 
     .paint {
         background: black;
-        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-width: 0.05rem;
         -webkit-text-stroke-color: gray;
-        animation: slideInRight 0.3s linear;
+        animation: slideInRight 300ms linear;
     }
     
     .danganronpa-logo {
         position: relative;
-        margin: 0 auto;
-        height: 150px;
-        width: 500px;
-        display: flex;
         align-self: center;
-        margin-bottom: 5em;
-        animation: flash 2s linear;
+        display: flex;
+        width: 500px;
+        height: 150px;
+        margin: 0 auto 5em;
+        animation: flash 2000ms linear;
     }
 
     .danganronpa-logo:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         background-image: url("../images/homepage/danganronpa-logo2.png");
-        background-size: cover;
         background-position: 100%;
+        background-size: cover;
     }
     
     /* MOVING LEFT ANIMATION */
@@ -274,22 +243,18 @@ body {
     @keyframes slideInLeft {
         0% {
             transform:translateX(-100%); 
-            /* opacity: 0.1;   */
             }
         100% { 
-            transform:translateX(0%); 
-            /* opacity: 1;  */
+            transform:translateX(0%);
             }
     }
 
     @keyframes slideInRight {
         0% {
             transform:translateX(100%); 
-            /* opacity: 0.1;   */
             }
         100% { 
             transform:translateX(0%); 
-            /* opacity: 1;  */
             }
     }
 
@@ -307,21 +272,20 @@ body {
     /* COLORING BOOK */
     .color-book {
         position: relative;
-        margin: 0 auto;
-        height: 3rem;
-        width: 28.125rem;
         align-self: center;  
+        margin: 0 auto;
+        width: 28.125rem;
+        height: 3rem;
+        margin-bottom: 2em;
         font-family: 'trebuc';
+        font-size: 2.5em;
+        font-style: italic;
         color: #fcd597;
+        text-align: center;
+        text-shadow: 0 0 15px #fd2a01;
         border-top: 3px solid #fcd597;
         border-bottom: 3px solid #fcd597;
         box-shadow: 0 0 20px #fd2a01;
-        text-shadow: 0 0 15px #fd2a01;
-        /* padding-top: 0.5em; */
-        text-align: center;
-        margin-bottom: 2em;
-        font-size: 2.5em;
-        font-style: italic;
     }
 
     .color-book:before {
