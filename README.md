@@ -49,7 +49,7 @@ As a user, I want to drag a mouse across a canvas to make free-form lines so tha
 
 ### Landing Page
 
-<a href="https://adesuwa-osagie.github.io/hackathon-coloring-book/" target="_blank">![Coloring Book Homepage](./images/screenshots/homepage-screenshot.png)</a>
+<a href="https://adesuwa-osagie.github.io/hackathon-coloring-book/" target="_blank">![Coloring Book Homepage](./images/screenshots/homepage-screenshot2.png)</a>
 <br/>
 
 ### The App
