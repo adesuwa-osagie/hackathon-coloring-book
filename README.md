@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://adesuwa-osagie.github.io/hackathon-coloring-book/">
-    <img src="./images/monokuma-bobross.png" alt="Logo" width="150" height="150">
+    <img src="./images/monokuma-bobross3.png" alt="Logo" width="150" height="150">
   </a>
 
   <h3 align="center">Danganronpa Coloring Book</h3>
