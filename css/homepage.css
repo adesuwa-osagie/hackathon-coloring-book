@@ -655,7 +655,8 @@ body {
 
     .bullet h2 {
         color: black;
-        margin-left: 1em;
+        margin-top: 0.25em;
+        margin-left: 0.5em;
     }
 
     .contact-checker {
