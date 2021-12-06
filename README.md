@@ -110,11 +110,11 @@ To get a local copy up and running, follow these simple steps:
 
 * [From Figma to code](https://scrimba.com/learn/figmatocode)
   
-  * This was my go-to source for re-learning about "position: flex" and "position: absolute" within a couple of hours. Thanks to source, I was able to create my own technique: a double background with decreased opacity 😎.
+  * This was my go-to source for re-learning about "position: flex" and "position: absolute" within a couple of hours. Thanks to this source, I was able to create my own technique: a double background with decreased opacity 😎.
 
 * [The YouTube Community](www.youtube.com)
   
-  * From relearning about Danganronpa to learning techniques for creating images for backgrouds.
+  * From relearning about Danganronpa to learning techniques for creating images for the backgrounds.
 
 * [Stack Overflow](https://stackoverflow.com/)
   * Using non-technical terms, I was able to find solutions to techniques that I wanted to implement in this project.
