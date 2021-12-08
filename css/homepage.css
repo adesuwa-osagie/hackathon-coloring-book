@@ -291,37 +291,34 @@ body {
     .color-book:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        /* background-image: url("../images/homepage/danganronpa-logo2.png"); */
         background: #fd2a01;
-        background-size: cover;
         background-position: 100%;
+        background-size: cover;
         opacity: 0.45;
     }
 
     .color-book a {
-        text-decoration: none;
-        color: white;
         padding: 0.5em;
         position: relative;
+        color: white;
+        text-decoration: none;
     }
-
 
      /* NEWBIE MESSAGE SECTION */
     
     .newbie-message {
         position: relative;
-        margin: 0 auto;
-        height: 5.625rem;
-        width: 28.125rem;
-        display: flex;
         align-self: center;
-        color: black;
+        display: flex;
+        width: 28.125rem;
+        height: 5.625rem;
+        margin: 0 auto 6em;
         font-family: 'trebuc';
-        margin-bottom: 6em;
+        color: black;
     }
 
     /* SCROLL */
@@ -331,51 +328,48 @@ body {
     }
 
     .new {
-        border: 2px solid #ffe200;
         position: relative;
         font-size: 1.2rem;
+        border: 2px solid #ffe200;
         box-shadow: 0 0 10px orange;
     }
 
     .new-tip {
-        border: 2px solid #f000c3;
         position: relative;
-        color: white;
         font-size: 1.2rem;
-
+        color: white;
+        border: 2px solid #f000c3;
     }
 
     .new:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        /* background-image: url("../images/homepage/danganronpa-logo2.png"); */
         background: white;
-        background-size: cover;
         background-position: 100%;
+        background-size: cover;
         opacity: 0.65;
     }
 
     .new-tip:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        /* background-image: url("../images/homepage/danganronpa-logo2.png"); */
         background: black;
-        background-size: cover;
         background-position: 100%;
+        background-size: cover;
         opacity: 0.65;
     }
 
     .newbie-message p {
-        padding: 0.5em;
         position: relative;
+        padding: 0.5em;
     }
 
     .dangan {
@@ -383,9 +377,8 @@ body {
     } 
 
     .video {
-        text-decoration: none;
-        text-decoration: underline #f000c3;
         color: white;
+        text-decoration: underline #f000c3;
     }
 
     .video:hover {
@@ -400,32 +393,29 @@ body {
     /* ABOUT SECTION */
     #about {
         position: relative;
-        margin: 0 auto;
-        height: 25rem;
-        width: 35rem;
-        display: flex;
-        align-self: center;
-        color: black;
-        font-family: 'trebuc';
         flex-direction: column;
-        margin-bottom: 4rem;
+        align-self: center;
+        display: flex;
+        width: 35rem;
+        height: 25rem;
+        margin: 0 auto 4rem;
+        font-family: 'trebuc';
+        color: black;
     }
 
     .about-gallery {
-        color: #4c4c4c;
-        /* border: 2px solid #ffe200; */
         position: relative;
-        font-size: 1.5rem;
-        box-shadow: 0 0 10px black;
-        font-weight: bold;
         width: 60%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #4c4c4c;
+        box-shadow: 0 0 10px black;
     }
 
     .about-summary {
-        /* border: 2px solid #f000c3; */
         position: relative;
-        color: white;
         font-size: 1.2rem;
+        color: white;
     }
 
     .italicized {
@@ -435,100 +425,88 @@ body {
     .about-gallery:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        /* background-image: url("../images/homepage/danganronpa-logo2.png"); */
         background: #f3bc00;
-        background-size: cover;
         background-position: 100%;
-        /* opacity: 0.65; */
+        background-size: cover;
     }
 
     .about-summary:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        /* background-image: url("../images/homepage/danganronpa-logo2.png"); */
         background: #312f32;
-        background-size: cover;
         background-position: 100%;
+        background-size: cover;
         opacity: 0.65;
     }
 
     #about p {
-        padding: 0.5em;
         position: relative;
+        padding: 0.5em;
     }
 
     /* "WHAT ELSE" SECTION */
 
-
     .what-else {
-        /* position: absolute; */
         position: relative;
-        margin: 0 auto;
-        height: 35rem;
-        width: 540px;
-        display: flex;
-        align-self: center;
-        color: black;
-        font-family: 'trebuc';
         flex-direction: column;
-        margin-bottom: 20rem;
-        border: 3px solid #f000c3;
-        margin-top: -4em;
+        align-self: center;
+        display: flex;
+        width: 540px;
+        height: 35rem;
         padding: 2em;
+        margin: -4em auto 20rem;
+        font-family: 'trebuc';
+        color: black;
+        border: 3px solid #f000c3;
         box-shadow: 0 0 10px violet;
     }
 
     .what-else:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        
-        background-size: 250px;
-        /* background-repeat: no-repeat; */
-        background-position: center;
         background-image: url("../images/backgrounds/mintbean-monokuma.jpg");
+        background-position: center;
         background-size: 50%;
         opacity: .65;
     }
 
     .what-else-list {
-        border: 2px solid white;
         position: relative;
-        color: white;
-        font-size: 1.5rem;
-        padding: 1em;
         height: 18.5em;
+        padding: 1em;
+        font-size: 1.5rem;
+        color: white;
+        border: 2px solid white;
     }
-
 
     .what-else-list:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        /* background-image: url("../images/homepage/danganronpa-logo2.png"); */
         background: #312f32;
-        background-size: cover;
         background-position: 100%;
+        background-size: cover;
         opacity: 0.70;
     }
 
     .what-else ul {
-        padding: 0.5em;
         position: relative;
+        padding: 0.5em;
     }
 
     .what-else ul li {
@@ -547,11 +525,11 @@ body {
 
     .concave {
         position: relative;
-        overflow: hidden;
-        padding: 50px 0;
-        width: 540px;
-        margin: 0 auto;
         z-index: 2;
+        width: 540px;
+        padding: 50px 0;
+        margin: 0 auto;
+        overflow: hidden;
     }
 
     .concave p {
@@ -605,7 +583,7 @@ body {
     }
 
     .footer-header {
-        width: 40%;
+        width: 60%;
         display: flex;
         
         font-size: 1.5em;
@@ -778,12 +756,15 @@ body {
     }
 
     .bullet {
+        width: 80%;
         height: 2.5em;
-        
     }
 
     .bullet h2 {
-        margin-left: 2em;
+        position: relative;
+        margin-top: 0;
+        margin-left: 0.5em;
+        margin-bottom: 2em;
         font-size: 2em;
     }
 
