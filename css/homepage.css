@@ -273,10 +273,9 @@ body {
     .color-book {
         position: relative;
         align-self: center;  
-        margin: 0 auto;
+        margin: 0 auto 2em;
         width: 28.125rem;
         height: 3rem;
-        margin-bottom: 2em;
         font-family: 'trebuc';
         font-size: 2.5em;
         font-style: italic;
@@ -533,63 +532,54 @@ body {
     }
 
     .concave p {
+        position: relative;
+        padding: 0.6em;
         font-family: 'trebuc';
-        color: black;
-        text-align: center;
         font-size: 1.2em;
         font-weight: bold;
+        color: black;
+        text-align: center;
     }
       
     .what-else-header {  
         position: relative;
-        background: #b3b3b3;
         height: 90px;
-        /* border-top: 25px solid pink;
-        border-bottom: 25px solid pink; */
+        background: #b3b3b3;
     }
       
     .what-else-header:before,
     .what-else-header:after {
-        box-shadow: 0 0 0 15px black;
-        border-radius: 100%;
-        position: absolute;
-        height: 80px;  /* You can change height to increase or decrease concave radius */ 
         content: '';
+        position: absolute;
+        top: 100%;
         right: -20%;
         left: -20%;
-        top: 100%;
-        padding:2em;
         z-index: 2;
+        height: 80px;  /* You can change height to increase or decrease concave radius */ 
+        padding:2em;
+        border-radius: 100%;
+        box-shadow: 0 0 0 15px black;
     }
     
     .what-else-header:after {
-        bottom: 100%;
         top: auto;
-    }
-
-    .what-else-header p {
-        padding: 0.6em;
-        position: relative;
+        bottom: 100%;
     }
 
     /* FOOTER */
 
     #contact {
-        left: 0;
         bottom: 0;
+        left: 0;
         width: 100%;
-        /* border: 1px solid violet; */
-
     }
 
     .footer-header {
-        width: 60%;
         display: flex;
-        
-        font-size: 1.5em;
-        /* border: 1px solid green; */
-        transform: translateX(-100%);
+        width: 60%;
         margin-bottom: 1em;
+        font-size: 1.5em;
+        transform: translateX(-100%);
     }
 
     .transformRight {
@@ -598,43 +588,31 @@ body {
     }
 
     .checkerboard {
+        z-index: 2;
         width: 3em;
         height: 3em;
-        /* border: 1px solid blue; */
         background-image: url("../images/backgrounds/contact-checkerboard.jpg");
-        /* height: 60px; */
-        
-        background-repeat: no-repeat;
         background-position: center;
+        background-repeat: no-repeat;
         background-size:100%;
-        z-index: 2;
         box-shadow: 0 0 10px violet;
     }
 
     .bullet {
-        font-size: 1.2em;
-        font-family: 'PoorRichard';
-
-        /* border: 1px solid orange; */
         width: 100%;
-        
-        /* background-color: none;
-        background-image: url("../images/orange-bullet.png"); */
-        /* height: 60px; */
-
+        font-family: 'PoorRichard';
+        font-size: 1.2em;
         background-color: #f18101;
-        border-radius: 0 45px 45px 0;
-        background-repeat: no-repeat;
         background-position: center;
+        background-repeat: no-repeat;
         background-size:100%;
-        /* background: */
-        /* margin-left: -0.8em; */
+        border-radius: 0 45px 45px 0;
     }
 
     .bullet h2 {
-        color: black;
         margin-top: 0.25em;
         margin-left: 0.5em;
+        color: black;
     }
 
     .contact-checker {
@@ -646,22 +624,19 @@ body {
     .contact-checker:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        
-        background-size: 250px;
-        /* background-repeat: no-repeat; */
-        background-position: center;
         background-image: url("../images/backgrounds/confrontation-floor.jpg");
+        background-position: center;
         background-size: 20%;
         opacity: .65;
     }
 
     #contact p {
-        font-size: 2em;
         font-family: 'DorBlue';
+        font-size: 2em;
         color: #b48fd3;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #132aaa;
@@ -672,10 +647,7 @@ body {
         width: 50%;
         border: 3px solid white;
         border-radius: 8px;
-        margin: 1em;
-        margin-left: 1.5em;
-        margin-top: 0.5em;
-    
+        margin: 0.5em 1em 1em 1.5em;
     }
 
     .contacts {
@@ -685,26 +657,22 @@ body {
     .contacts:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        /* background-image: url("../images/homepage/danganronpa-logo2.png"); */
         background: #312f32;
-        background-size: cover;
         background-position: 100%;
+        background-size: cover;
         opacity: 0.65; 
     }
     
     .social-icons {
-        display: flex;
-        border: 1px solid white;
+        position: relative;
         justify-content: space-between;
+        display: flex;
         width: 50%;
         font-size: 2em;
-        border: grey;
-        position: relative;
-
     }
 
     .contacts p {
@@ -733,8 +701,8 @@ body {
     }
     
     .topnav-right a:hover {
-        background-color: white;
         color: black;
+        background-color: white;
         transform: scale(1.1);
     }
 
@@ -763,8 +731,8 @@ body {
     .bullet h2 {
         position: relative;
         margin-top: 0;
-        margin-left: 0.5em;
         margin-bottom: 2em;
+        margin-left: 0.5em;
         font-size: 2em;
     }
 
