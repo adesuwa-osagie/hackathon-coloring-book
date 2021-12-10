@@ -9,7 +9,6 @@ $(document).ready(function() {
     });
 
     // GET NAME OF PIC TO APPEAR
-
     $(".image").click(function() {
         namePic.textContent = $(this).siblings().text();
     });
