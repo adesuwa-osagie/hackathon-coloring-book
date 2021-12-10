@@ -6,7 +6,6 @@ $(document).ready(function() {
     $(".image").click(function () {
         $(".image").not(this).removeClass("highlight");
         $(this).addClass("highlight");
-        $(this).addClass("overlay")
     });
 
     // GET NAME OF PIC TO APPEAR

@@ -192,7 +192,7 @@
 
     // SAVE CANVAS
     function saveCanvas() {
-        //Note: window.navigator does not work
+        //Note: "window.navigator" alone does not work
     
         if (canvas.msToBlob) { // IE/Edge (PNG only)
             let blob = canvas.msToBlob();
