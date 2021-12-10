@@ -69,21 +69,20 @@ body {
 }
 
 .mobile {
-    background: black;
-    height: 100vh;
     width: 100vw;
-    background-size: cover;
-    background-position: 50% 0;
+    height: 100vh;
     padding-top: 2em;
+    background: black;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .despair-message p {
+    place-items: center;
     margin-top: 2em;
-    
+    font-family: 'trebuc';
     font-size: 2rem;
     text-align: center;
-    place-items: center;
-    font-family: 'trebuc';
 }
 
 .catchphrase {
@@ -91,31 +90,26 @@ body {
 }
 
 .despair-image {
-    margin-top: 3em;
     position: relative;
-    margin: 0 auto;
-    height: 150px;
-    width: 250px;
-    border: 2px solid white;
-    display: flex;
     align-self: center;
-
+    display: flex;
+    width: 250px;
+    height: 150px;
+    margin: 3em auto 0;
+    border: 2px solid white;
 }
 
 .despair-image:before {
     content: '';
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: url("../images/backgrounds/monokuma_gloomy_sunday.jpg");
-    background-size: cover;
     background-position: 100%;
+    background-size: cover;
 }
-
-
-
 
 /* TABLET */
 @media only screen and (min-width: 720px) {
@@ -133,23 +127,23 @@ body {
     }
 
     body {
-        background: linear-gradient(162deg, rgba(127,123,130,1) 11%, rgba(184,57,52,1) 35%, rgba(142,106,109,1) 60%, rgba(196,43,35,1) 76%, rgba(145,102,104,1) 82%, rgba(147,25,24,1) 100%);
-        height: 100%;
         position: relative;
+        height: 100%;
+        background: linear-gradient(162deg, rgba(127,123,130,1) 11%, rgba(184,57,52,1) 35%, rgba(142,106,109,1) 60%, rgba(196,43,35,1) 76%, rgba(145,102,104,1) 82%, rgba(147,25,24,1) 100%);
         background-repeat: no-repeat;
 
     }
     
 
     .drawing {
+        position: relative;  
         display: flex;
         flex-direction: column;
-        background-image: url("../images/backgrounds/floor.jpg");
-        background-size: 50%;
         padding: 1em;
         margin-bottom: 1em;
+        background-image: url("../images/backgrounds/floor.jpg");
+        background-size: 50%;
         box-shadow: 0px 8px 5px 0px rgba(39, 39, 39, 0.5); 
-        position: relative;  
     }
 
     .top_drawing {
@@ -157,55 +151,50 @@ body {
     }
 
     #canvas {
-        border: 2px solid black;
-        margin-top: 0.5em; 
-        background-image: url("../images/hope-peak-academy.png");
-        background-size: 400px;
-        background-repeat: no-repeat;
-        background-position: center;
-        box-shadow: 10px -8px 1px 2px rgba(109, 19, 19, 0.5); 
-        height: 500px;
         width: 500px;
+        height: 500px;
+        margin-top: 0.5em; 
         cursor: url("../images/svg/iconmonstr-paintbrush-1.svg") 0 15, pointer;
+        background-image: url("../images/hope-peak-academy.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        border: 2px solid black;
+        box-shadow: 10px -8px 1px 2px rgba(109, 19, 19, 0.5); 
     }
 
     .homeTablet_controls {
         display: flex;
         flex-direction: column;
-        /* border: 1px solid white; */
     }
 
     .homeTablet {
-        color: white;
-        /* margin-left: 80%; */
-        font-size: 2em;
         position: absolute;
         top: 0;
         right: 0;
         margin-top: 0.5em;
         margin-right: 0.5em;
+        font-size: 2em;
+        color: white;
     }
 
     .homeTablet:hover, .homeTable:active {
-        color: #f000c3;
-        
+        color: #f000c3;  
     }
 
     .homeDesktop {
         display: none;
     }
 
-
     .controls {
+        position: relative;
         margin-top: 2.8em;
         margin-left: 0.8em;
-
-        background: #333132;
-        border: 2px solid white;
-        position: relative;
         font-family: 'trebuc', sans-serif;
         font-size: 1.2em;
         color: white;
+        background: #333132;
+        border: 2px solid white;
         border-radius: 15px;
     }
 
@@ -217,8 +206,8 @@ body {
     }
 
     .color-picker {
-        margin-left: 1.5rem;
         margin-bottom: 1.5em;
+        margin-left: 1.5rem;
         cursor: default;
     }
 
@@ -242,10 +231,10 @@ body {
     }
 
     .button {
-        text-decoration: none;
         padding: 1rem;
-        text-align: center;
         font-size: 1.2em;  
+        text-align: center;
+        text-decoration: none;
         cursor: url("../images/target-symbol.png"), pointer;
     }
 
@@ -254,15 +243,14 @@ body {
     }
 
     .erase {
-        margin-top: 1em;
-        background-color: pink;
-        color: white;
-        width: 10rem;
         align-self: center;
-        border: 1px solid black;
-        color: black;
-        border-radius: 15px;
+        width: 10rem;
         padding: 0.5rem;
+        margin-top: 1em;
+        color: black;
+        background-color: pink;
+        border: 1px solid black;
+        border-radius: 15px;
     }
 
     .erase:active {
@@ -274,8 +262,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 0.5em;
-        margin: 10px;
-        margin-top: 1em;
+        margin: 1em 0.625em 0.625em;
     }
 
     .undo, .redo {
@@ -288,15 +275,14 @@ body {
     }
 
     .download {
-        background-color: none;
-        background-image: url("../images/orange-bullet.png");
         height: 60px;
-        
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:100%;
         margin-top: 0.4em;
         margin-bottom: 0;
+        background-color: none;
+        background-image: url("../images/orange-bullet.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:100%;
     }
 
     .download:active {
@@ -304,48 +290,43 @@ body {
     }
 
     .downloadText {
+        width: 100px;
         margin-top: 0.8em;
         margin-left: 1.5em;
-        width: 100px;
-        color: black;
-        font-size: 1.2em;
         font-family: 'PoorRichard', serif; 
+        font-size: 1.2em;
         font-weight: bold; 
+        color: black;
     }
 
     .erase:hover, .undo:hover, .redo:hover, .download:hover {     
         transform: scale(1.05);
     }
 
-
     .nameDrawingWord {
         display:flex
     }
 
     .name_pic {
-        /* border: 1px solid green; */
-        margin-top: .83em;
-        height: 70px;
         width: 320px;
-        background-color:white;
+        height: 70px;
+        padding-left: 0.5em;
+        padding-bottom: 4em;
+        margin-top: 0.83em;
+        font-family: 'DorBlue', sans-serif;
+        font-size: 1.2em;
         color: black;
         -webkit-text-stroke-width: 1.2px;
         -webkit-text-stroke-color: gray;
-
-
-        font-family: 'DorBlue', sans-serif;
-        font-size: 1.2em;
-        padding-left: 0.5em;
-        padding-bottom: 4em;
+        background-color:white;
     }
 
     .drawingBlink {
-        /* border: 1px solid blue; */
+        width: 270px;
+        height: 77.5px;
         margin-top: 0.98em;
         background-color: #218acc;
         border-radius: 0 30px 30px 0;
-        height: 77.5px;
-        width: 270px;
     }
 
     .painting {
@@ -354,12 +335,11 @@ body {
     }
 
     .painting p {
-        text-transform: uppercase;
-        color: white;
         font-family: 'GillSansMT-Condensed', sans-serif;
         font-size: 2em;
-        letter-spacing: .2rem;
-
+        color: white;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
     }
 
     .blink {
@@ -374,38 +354,31 @@ body {
  
     .ross_animation {
         display: flex;
-        /* flex-direction: column; */
-        /* border: 1px solid white; */
-        /* bottom: 0;
-        right: 0; */
-        margin-left: auto;
         align-items: center;
+        margin-left: auto;
     }
 
     .monoBobRoss {
-        height: 100px;
         width: 100px;
-        /* border: 1px solid white; */
-        background-image: url("../images/monokuma-bobross3.png");
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: 100%;
-        /* margin-left: 5m; */
+        height: 100px;
         margin-left: auto;
+        background-image: url("../images/monokuma-bobross3.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .animationButton {
-        height: 75px;
-        width: 75px;
-        /* position: absolute; */
-        bottom: 0;
         right: 0;
-        border-radius: 8px;
-        color: black;
-        background-color: white;
-        font-family: 'trebuc', sans-serif;
-        cursor: url("../images/target-symbol.png"), pointer;
+        bottom: 0;
+        width: 75px;
+        height: 75px;
         margin-top: 0;
+        font-family: 'trebuc', sans-serif;
+        color: black;
+        cursor: url("../images/target-symbol.png"), pointer;
+        background-color: white;
+        border-radius: 8px;
     }
 
     .restart {
@@ -414,44 +387,42 @@ body {
     }
     
     .horizontal_rule {
-        border: 5px solid #4b0d0d;
         width: 80%;
         margin: auto; 
+        border: 5px solid #4b0d0d;
     }
 
     .gallery {
+        position: relative;
         display: grid;
-        background: gray;
         grid-template-columns: repeat(4, auto);
         gap: 0.5em;
+        padding: 1em;
         margin-top: 10px;
         margin-bottom: 10px;
-        position: relative;
-        padding: 1em;
+        background: gray;
         box-shadow: 0px 8px 5px 0px rgba(39, 39, 39, 0.5);
-
     }
 
     .gallery:before {
         content: '';
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         background-image: url("../images/hope-peak-academy.png");
-        background-size: 250px;
-        background-repeat: no-repeat;
         background-position: center;
-        opacity: .22;
-        
+        background-repeat: no-repeat;
+        background-size: 250px;
+        opacity: 0.22; 
     }
 
     .image {
-        border: 3px solid pink;
-        margin: 5px;
-        padding: 8px;
         position: relative;
+        padding: 8px;
+        margin: 5px;
+        border: 3px solid pink;
     }
 
     /* Similar to highlight for desktop */
@@ -461,27 +432,18 @@ body {
     }
 
     .image ~ p {
-        display: none;
-        
+        display: none;    
     }
-
-    /* .image-desktop {
-        display: none;
-    } */
 
     .reset {
-        /* border: 1px solid white; */
         margin-top: 0.5em;
-         
-        background-color: #f44336;
-        font-size: 1.5em;
-        border-radius: 8px;
         margin-left: 40%;
-
+        font-size: 1.5em;  
+        background-color: #f44336;
+        border-radius: 8px;
     }
 
-    .reset:active {
-        
+    .reset:active {   
         transform: translateY(4px);
     }
 
@@ -500,7 +462,6 @@ body {
 @media only screen and (min-width: 1260px) {
 
     .top_drawing {
-
         top:0;
         right:0;
     }
@@ -510,25 +471,23 @@ body {
     }
 
     .homeDesktop {
-        display: block;
-        color: black;
-        font-size: 2em;
-        text-decoration: none;
-        font-family: 'trebuc';
-        margin-left: 15rem;
-        background-color: white;
-        height: 60px;
-        padding: 10px;
         position: absolute;
         top:0;
         right:0;
+        display: block;
+        height: 60px;
+        padding: 10px;
+        margin-left: 15rem;
+        font-family: 'trebuc';
+        font-size: 2em;
+        color: black;
+        text-decoration: none;
         cursor: url("../images/target-symbol.png"), pointer;
     }
 
     .homeDesktop:hover {
         color: white;
-        background-color: black;
-        
+        background-color: black;      
     }
 
     .homeDesktop:hover .fas{
@@ -556,11 +515,8 @@ body {
 
     .gallery {
         grid-template-columns: repeat(6, auto);
-
         padding-left: 8.5rem;
     }
-
-
 
     .image:hover {
         border: 3px solid #f000c3;
@@ -571,5 +527,4 @@ body {
         display: block;
     }
     
-
 }
