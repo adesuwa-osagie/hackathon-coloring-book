@@ -393,9 +393,6 @@ body {
 
     .gallery {
         position: relative;
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        gap: 0.5em;
         padding: 1em;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -415,6 +412,16 @@ body {
         background-repeat: no-repeat;
         background-size: 250px;
         opacity: 0.22; 
+    }
+
+    .gallery-images {
+        position: relative;
+        justify-content: space-around;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, auto);
+        gap: 0.5em;
+        padding: 1em;
     }
 
     .image {
@@ -513,9 +520,8 @@ body {
         font-size: 1.8rem;
     }
 
-    .gallery {
-        grid-template-columns: repeat(6, auto);
-        padding-left: 8.5rem;
+    .gallery-images {
+        grid-template-columns: repeat(5, auto);
     }
 
     .image:hover {
