@@ -177,7 +177,7 @@ body {
         color: white;
     }
 
-    .homeTablet:hover, .homeTable:active {
+    .homeTablet:hover, .homeTablet:active {
         color: #f000c3;  
     }
 
