@@ -177,7 +177,7 @@ body {
         color: white;
     }
 
-    .homeTablet:hover, .homeTablet:active {
+    .homeTablet:hover, .homeTablet:focus, .homeTablet:active {
         color: #f000c3;  
     }
 
@@ -298,7 +298,8 @@ body {
         color: black;
     }
 
-    .erase:hover, .undo:hover, .redo:hover, .download:hover {     
+    .erase:hover, .undo:hover, .redo:hover, .download:hover,
+    .erase:focus, .undo:focus, .redo:focus, .download:focus {     
         transform: scale(1.05);
     }
 
@@ -432,7 +433,7 @@ body {
     }
 
     /* Similar to highlight for desktop */
-    .image:hover {
+    .image:hover, image:focus {
         border: 3px solid #f000c3;
         box-shadow: 8px 5px 10px gray;
     }
@@ -453,7 +454,7 @@ body {
         transform: translateY(4px);
     }
 
-    .reset:hover {
+    .reset:hover, .reset:focus {
         color: white;
         transform: scale(1.1);
     }
@@ -492,12 +493,13 @@ body {
         cursor: url("../images/target-symbol.png"), pointer;
     }
 
-    .homeDesktop:hover {
+    .homeDesktop:hover, .homeDesktop:focus {
         color: white;
         background-color: black;      
     }
 
-    .homeDesktop:hover .fas{
+    .homeDesktop:hover .fas,
+    .homeDesktop:focus .fas{
         color: #f000c3;
     }
 
@@ -524,7 +526,7 @@ body {
         grid-template-columns: repeat(5, auto);
     }
 
-    .image:hover {
+    .image:hover, image:focus {
         border: 3px solid #f000c3;
         box-shadow: 8px 5px 10px black;
     }

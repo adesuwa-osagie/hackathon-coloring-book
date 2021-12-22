@@ -380,7 +380,7 @@ body {
         text-decoration: underline #f000c3;
     }
 
-    .video:hover {
+    .video:hover, .video:focus {
         color: #f000c3;
     }
 
