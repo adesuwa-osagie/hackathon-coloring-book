@@ -271,40 +271,27 @@ body {
 
     /* COLORING BOOK */
     .color-book {
-        position: relative;
-        align-self: center;  
-        margin: 0 auto 2em;
+        width: 28.125rem;
+        margin: 0 auto 6em;
         width: 28.125rem;
         height: 3rem;
+    }
+
+    .color-book__text {
+        display: block;
+        text-align: center;
         font-family: 'trebuc';
         font-size: 2.5em;
         font-style: italic;
-        color: #fcd597;
-        text-align: center;
+        color: white;
+        text-decoration: none;
+        background: rgba(253, 42, 1, 0.45);
+        justify-content: center;
+        padding: 1px 10px;
         text-shadow: 0 0 15px #fd2a01;
         border-top: 3px solid #fcd597;
         border-bottom: 3px solid #fcd597;
         box-shadow: 0 0 20px #fd2a01;
-    }
-
-    .color-book:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fd2a01;
-        background-position: 100%;
-        background-size: cover;
-        opacity: 0.45;
-    }
-
-    .color-book a {
-        padding: 0.5em;
-        position: relative;
-        color: white;
-        text-decoration: none;
     }
 
      /* NEWBIE MESSAGE SECTION */
